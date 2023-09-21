@@ -413,6 +413,70 @@ progress {
     }
   }
 
+.preloadbody {
+  overflow: hidden;
+}
+
+.loader-wrapper {
+  background: #212529;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  position: fixed;
+  width: 100vw;
+  z-index: 9999;
+}
+
+.loader {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  z-index: 9999;
+}
+  .loader span {
+    position: absolute;
+    display: block;
+    width: 40%;
+    height: 40%;
+    border-radius: 50%;
+    animation: speed 2s infinite ease-in-out;
+  }
+
+.one {
+  background: #0a8ae6;
+  animation-delay: 1.5s !important;
+}
+.two {
+  background: #f40042;
+  animation-delay: 1s !important;
+}
+.three {
+  background: #fdcb8e;
+  animation-delay: 0.5s !important;
+}
+.four {
+  background: #f8f9fa;
+}
+@keyframes speed {
+  0% {
+    transform: translate(0%);
+    border-radius: 50%;
+  }
+  25% {
+    transform: translate(150%) scale(0.5);
+    border-radius: 0%;
+  }
+  50% {
+    transform: translate(150%, 150%);
+    border-radius: 50%;
+  }
+  75% {
+    transform: translate(0, 150%) scale(0.5);
+    border-radius: 0%;
+  }
+}
+  
+
 .display-1 {
   font-size: calc(1.625rem + 4.5vw);
   font-weight: 300;

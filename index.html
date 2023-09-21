@@ -51,7 +51,22 @@
 
   </head>
 
-  <body data-bs-spy="scroll" data-bs-target="#navScroll">
+  <body class="preloadbody" data-bs-spy="scroll" data-bs-target="#navScroll">
+
+<div class="loader-wrapper">
+  <div class="loader">
+    <span class="one"></span>
+    <span class="two"></span>
+    <span class="three"></span>
+    <span class="four"></span>
+  </div>
+  <div style="color: white; text-align: center;">
+    <a>BIM Farers</a><br>
+    <a>Outsource Smarter</a><br>
+  </div>
+</div>
+    
+
 
     <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
       <div class="container">
@@ -540,6 +555,15 @@
 <div class="container text-center py-3 small">© 2023 BIM Farers. All rights reserved.
 </div>
 </footer>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+<script>
+  // Script to remove preloader when fully loaded
+  $(window).on("load", function(){
+    $(".loader-wrapper").fadeOut("slow");
+    $("body").removeClass("preloadbody");
+  });
+</script>
 
 <script src="js/bootstrap.bundle.min.js"></script>
 <script src="js/aos.js"></script>
