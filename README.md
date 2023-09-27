@@ -1,2 +1,2 @@
-# Stride - Bootstrap 5 HTML template
-A simple but clean Bootstrap 5 HTML template from https://templatedeck.com
+# BIM Farers | Engineering & Drafting Hybrid Outsourcing
+Engineering and drafting startup based in Melbourne.
