@@ -60,7 +60,7 @@
   --bs-border-style: solid;
   --bs-border-color: #dee2e6;
   --bs-border-color-translucent: rgba(21, 21, 21, 0.175);
-  --bs-border-radius: 0px;
+  --bs-border-radius: 10px;
   --bs-border-radius-sm: 0.25rem;
   --bs-border-radius-lg: 0.5rem;
   --bs-border-radius-xl: 1rem;
@@ -407,11 +407,6 @@ progress {
   @media (min-width: 1200px) {
     .lead {
       font-size: 1.33rem; } }
-  @media (max-width: 991.98px) {
-    .lead {
-      font-weight: 400;
-    }
-  }
 
 .preloadbody {
   overflow: hidden;
@@ -558,7 +553,9 @@ progress {
 
 .img-fluid {
   max-width: 100%;
-  height: auto; }
+  height: auto; 
+  box-shadow: rgba(0, 0, 0, 0.15) 0px 5px 15px 0px;
+}
 
 .img-thumbnail {
   padding: 0.25rem;
@@ -2505,7 +2502,9 @@ textarea.form-control-lg {
   --bs-btn-disabled-color: #151515;
   --bs-btn-disabled-bg: transparent;
   --bs-btn-disabled-border-color: #151515;
-  --bs-gradient: none; }
+  --bs-gradient: none; 
+  border-radius: 5px;
+}
 
 .btn-outline-secondary {
   --bs-btn-color: #6c757d;
@@ -3653,7 +3652,7 @@ textarea.form-control-lg {
   --bs-card-title-spacer-y: 0.5rem;
   --bs-card-border-width: 1px;
   --bs-card-border-color: var(--bs-border-color-translucent);
-  --bs-card-border-radius: 0px;
+  --bs-card-border-radius: 10px;
   --bs-card-box-shadow: ;
   --bs-card-inner-border-radius: -1px;
   --bs-card-cap-padding-y: 0.5rem;
@@ -3669,12 +3668,15 @@ textarea.form-control-lg {
   display: flex;
   flex-direction: column;
   min-width: 0;
+  min-height: 380px;
   height: var(--bs-card-height);
   word-wrap: break-word;
   background-color: var(--bs-card-bg);
   background-clip: border-box;
   border: var(--bs-card-border-width) solid var(--bs-card-border-color);
-  border-radius: var(--bs-card-border-radius); }
+  border-radius: var(--bs-card-border-radius); 
+  transition: color 0.2s ease-in-out, background-color 0.2s ease-in-out;
+}
   .card > hr {
     margin-right: 0;
     margin-left: 0; }
@@ -3692,11 +3694,24 @@ textarea.form-control-lg {
   .card > .card-header + .list-group,
   .card > .list-group + .card-footer {
     border-top: 0; }
+  .card:hover {
+    cursor: pointer;
+    background: #f3f3f3;
+    color: #636363;
+  }
 
 .card-body {
   flex: 1 1 auto;
   padding: var(--bs-card-spacer-y) var(--bs-card-spacer-x);
   color: var(--bs-card-color); }
+
+.card-author-date {
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  justify-content: space-between;
+  max-width: 450px;
+}
 
 .card-title {
   margin-bottom: var(--bs-card-title-spacer-y); }
@@ -5915,6 +5930,13 @@ textarea.form-control-lg {
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap; }
+
+.line-clamp {
+  display: -webkit-box;
+  -webkit-line-clamp: 5;
+  -webkit-box-orient: vertical;  
+  overflow: hidden;
+}
 
 .vr {
   display: inline-block;
