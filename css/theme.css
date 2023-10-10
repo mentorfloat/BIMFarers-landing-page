@@ -612,9 +612,9 @@ progress {
   height: 800px;
   margin: 10px;
   border-radius: 20px;
-  background-size: cover !important;
   position: relative;
   transition: width 0.8s;
+  overflow: hidden;
 }
 
 .img-box:hover {
