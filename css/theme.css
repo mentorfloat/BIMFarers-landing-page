@@ -408,6 +408,24 @@ progress {
     .lead {
       font-size: 1.33rem; } }
 
+.optimaltxt {
+  letter-spacing: -0.003em;
+  line-height: 30px;
+  font-size: 18px;
+  word-break: break-word;
+  text-rendering: optimizeLegibility;
+  -webkit-font-smoothing: antialiased;
+  -webkit-text-size-adjust: 100%;
+  margin-left: 18px;
+  margin-right: 18px;
+  font-family: "Charter","Inter", Georgia, Cambria, "Times New Roman", Times, serif;
+}
+  @media (min-width: 1200px) {
+    .optimaltxt {
+      font-size: 20px;
+      line-height: 32px; 
+    } }
+
 .preloadbody {
   overflow: hidden;
 }
@@ -4770,7 +4788,11 @@ textarea.form-control-lg {
     .modal-fullscreen-lg-down .modal-footer {
       border-radius: 0; }
     .modal-fullscreen-lg-down .modal-body {
-      overflow-y: auto; } }
+      overflow-y: auto; }
+  .text-references {
+    font-size: 0.8em;
+  }
+}
 
 @media (max-width: 1199.98px) {
   .modal-fullscreen-xl-down {
