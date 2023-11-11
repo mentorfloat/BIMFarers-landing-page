@@ -8,7 +8,7 @@
     </url>
     <url>
         <loc>https://www.bimfarers.com.au/blog</loc>
-        <lastmod>2023-10-16</lastmod>
+        <lastmod>2023-11-11</lastmod>
         <changefreq>weekly</changefreq>
         <priority>0.8</priority>
     </url>
@@ -21,6 +21,12 @@
     <url>
         <loc>https://www.bimfarers.com.au/2-built-to-rent</loc>
         <lastmod>2023-10-16</lastmod>
+        <changefreq>monthly</changefreq>
+        <priority>0.8</priority>
+    </url>
+    <url>
+        <loc>https://www.bimfarers.com.au/3-construction-recap-2023</loc>
+        <lastmod>2023-11-11</lastmod>
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
