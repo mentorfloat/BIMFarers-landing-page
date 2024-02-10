@@ -6312,6 +6312,12 @@ textarea.form-control-lg {
 .vh-100 {
   height: 100vh !important; }
 
+  @media screen and (max-width: 991.98px){
+    .vh-lg-unset {
+      height: unset !important; 
+    }
+  }
+
 .min-vh-100 {
   min-height: 100vh !important; }
 
