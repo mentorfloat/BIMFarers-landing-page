@@ -36,4 +36,10 @@
         <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
+    <url>
+        <loc>https://www.bimfarers.com.au/privacypolicy-plugin</loc>
+        <lastmod>2024-02-13</lastmod>
+        <changefreq>yearly</changefreq>
+        <priority>0.2</priority>
+    </url>
 </urlset>
