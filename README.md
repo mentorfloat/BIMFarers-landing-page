@@ -1,2 +1,2 @@
-# BIM Farers | Engineering & Drafting Hybrid Outsourcing
-Engineering and drafting startup based in Melbourne.
+# BIM Farers | Revit Programmers
+Construction and Revit programmers based in Melbourne.

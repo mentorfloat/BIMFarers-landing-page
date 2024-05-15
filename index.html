@@ -1,86 +1,376 @@
 <!doctype html>
 <html class="h-100" lang="en">
 
-  <head>
-      <meta charset="utf-8">
+<head>
+  <meta charset="utf-8">
   <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
-  <meta name="description" content="Melbourne-headquartered engineering and drafting hybrid outsourcing service for construction businesses specialising in MEP building services.">
+  <meta name="description"
+    content="BIM Farers has the coding knowledge to write custom Revit plugins that specifically target common repeated modelling tasks.">
   <link rel="apple-touch-icon" sizes="180x180" href="favicon/apple-touch-icon.png">
   <link rel="icon" type="image/png" sizes="32x32" href="favicon/favicon-32x32.png">
   <link rel="icon" type="image/png" sizes="16x16" href="favicon/favicon-16x16.png">
   <meta name="author" content="Steven Mah">
   <meta name="generator" content="Eleventy v2.0.0">
   <meta name="HandheldFriendly" content="true">
-  <title>BIM Farers | Engineering & Drafting Outsourcing | Australia | Malaysia</title>
+  <title>BIM Farers | Transform Revit Modelling via Programming</title>
   <link rel="stylesheet" href="css/theme.css">
 
-   <style>
+  <style>
+    /* inter-300 - latin */
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 300;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-300.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-300.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
 
-/* inter-300 - latin */
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 300;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-300.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-300.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 500;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-500.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-500.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
 
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-500.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-500.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 700;
-  font-display: swap;
-  src: local(''),
-       url('./fonts/inter-v12-latin-700.woff2') format('woff2'), /* Chrome 26+, Opera 23+, Firefox 39+ */
-       url('./fonts/inter-v12-latin-700.woff') format('woff'); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
-}
-@font-face {
-  font-family: 'Gilam';
-  font-style: normal;
-  font-weight: 600;
-  font-display: swap;
-  src: local(''),
+    @font-face {
+      font-family: 'Inter';
+      font-style: normal;
+      font-weight: 700;
+      font-display: swap;
+      src: local(''),
+        url('./fonts/inter-v12-latin-700.woff2') format('woff2'),
+        /* Chrome 26+, Opera 23+, Firefox 39+ */
+        url('./fonts/inter-v12-latin-700.woff') format('woff');
+      /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+    }
+
+    @font-face {
+      font-family: 'Gilam';
+      font-style: normal;
+      font-weight: 600;
+      font-display: swap;
+      src: local(''),
         url('./fonts/GilamSemiBold.woff') format('woff');
-}
+    }
+  </style>
 
-</style>
+</head>
 
-  </head>
+<body class="preloadbody" data-bs-spy="scroll" data-bs-target="#navScroll">
 
-  <body class="preloadbody" data-bs-spy="scroll" data-bs-target="#navScroll">
-
-<div class="loader-wrapper">
-  <div class="loader">
-    <span class="one"></span>
-    <span class="two"></span>
-    <span class="three"></span>
-    <span class="four"></span>
+  <div class="loader-wrapper">
+    <div class="loader">
+      <span class="one"></span>
+      <span class="two"></span>
+      <span class="three"></span>
+      <span class="four"></span>
+    </div>
+    <div style="color: white; text-align: center;">
+      <p>BIM Farers</p><br>
+      <p>Revit Coding</p><br>
+    </div>
   </div>
-  <div style="color: white; text-align: center;">
-    <p>BIM Farers</p><br>
-    <p>Outsource Smarter</p><br>
-  </div>
-</div>
-    
 
 
-    <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+
+  <nav id="navScroll" class="navbar navbar-expand-lg navbar-light fixed-top" tabindex="0">
+    <div class="container">
+      <a class="navbar-brand pe-4 fs-4" href="/">
+        <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32"
+          zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="32" preserveAspectRatio="xMidYMid meet"
+          class="bi bi-layers-half" version="1.0">
+          <defs>
+            <clipPath id="f56487630f">
+              <path d="M 32.375 248 L 342.875 248 L 342.875 371.824219 L 32.375 371.824219 Z M 32.375 248 "
+                clip-rule="nonzero" />
+            </clipPath>
+            <clipPath id="32c8f4f5f8">
+              <path d="M 32.375 2.824219 L 188 2.824219 L 188 328 L 32.375 328 Z M 32.375 2.824219 "
+                clip-rule="nonzero" />
+            </clipPath>
+          </defs>
+          <g clip-path="url(#f56487630f)">
+            <path fill="#0a8ae6"
+              d="M 32.367188 337.179688 C 115.6875 320.710938 186.414062 323.429688 190.347656 343.25 C 192.007812 351.621094 181.476562 361.707031 162.476562 371.804688 C 303.613281 342.292969 342.878906 248.332031 342.878906 248.332031 C 280.707031 285.105469 150.796875 274.859375 32.367188 337.179688 "
+              fill-opacity="1" fill-rule="nonzero" />
+          </g>
+          <path fill="#f40042"
+            d="M 187.441406 94.199219 C 187.550781 97.257812 187.625 100.320312 187.625 103.40625 C 187.625 167.429688 164.253906 226.003906 125.582031 271.109375 C 151.769531 262.5625 180.46875 259.925781 207.460938 271.449219 C 207.460938 271.449219 235.050781 178.277344 187.441406 94.199219 "
+            fill-opacity="1" fill-rule="nonzero" />
+          <g clip-path="url(#32c8f4f5f8)">
+            <path fill="#212529"
+              d="M 187.441406 94.199219 C 168.039062 59.929688 136.136719 27.167969 84.78125 2.847656 C 84.78125 2.847656 195.28125 109.558594 32.367188 327.507812 C 32.367188 327.507812 74.128906 287.894531 125.582031 271.109375 C 164.253906 226.003906 187.625 167.429688 187.625 103.40625 C 187.625 100.320312 187.550781 97.257812 187.441406 94.199219 "
+              fill-opacity="1" fill-rule="nonzero" />
+          </g>
+        </svg>
+        <span class="ms-1 fw-semibold" style="font-family: 'Gilam', sans-serif;">BIM Farers</span>
+      </a>
+
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item">
+            <a class="nav-link" href="#expertise">
+              Expertise
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#plugins">
+              Plugins
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="aboutus">
+              About Us
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="blog">
+              Blog
+            </a>
+          </li>
+
+        </ul>
+        <a href="mailto:info@bimfarers.com.au?subject=Reaching Out - " data-splitbee-event="Click Download"
+          aria-label="Connect Now" class="link-dark pb-1 link-fancy me-2">
+          Connect Now
+          <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewBox="0 0 29.996 29.997"
+            xml:space="preserve">
+            <g>
+              <g>
+                <path
+                  d="M27.345,28.665c-0.64-0.467-1.131-0.819-1.615-1.184c-1.549-1.158-3.076-2.353-4.656-3.468
+                  c-0.424-0.299-1.008-0.508-1.52-0.514c-3.367-0.045-6.736-0.01-10.104-0.037c-0.58-0.004-1.158-0.178-1.738-0.271
+                  c-0.006-0.09-0.013-0.179-0.019-0.27c0.841-0.639,1.671-1.295,2.533-1.904c0.182-0.128,0.479-0.125,0.725-0.126
+                  c3.255-0.009,6.511-0.019,9.766,0.014c0.383,0.004,0.811,0.188,1.135,0.41c0.938,0.646,1.836,1.352,2.9,2.146
+                  c0-0.944,0-1.709,0-2.57c0.893,0,1.69,0,2.534,0c0-3.955,0-7.809,0-11.75c-1.169,0-2.286-0.028-3.397,0.033
+                  c-0.156,0.009-0.406,0.455-0.412,0.702c-0.035,1.823-0.011,3.648-0.021,5.473c-0.014,1.921-0.983,2.896-2.908,2.899
+                  c-3.366,0.01-6.735-0.021-10.104,0.023c-0.513,0.008-1.101,0.211-1.52,0.512c-1.895,1.354-3.74,2.772-5.606,4.168
+                  c-0.191,0.143-0.398,0.264-0.736,0.486c0-1.545-0.017-2.937,0.009-4.324c0.01-0.533-0.047-0.839-0.698-0.969
+                  c-1.118-0.224-1.87-1.226-1.876-2.392c-0.021-3.958-0.025-7.915-0.003-11.872c0.006-1.431,1.074-2.528,2.5-2.534
+                  C8.661,1.326,14.807,1.327,20.953,1.35c1.387,0.006,2.423,1.079,2.49,2.464c0.029,0.616,0.049,1.237,0.004,1.852
+                  c-0.051,0.671,0.132,0.961,0.877,0.907c0.977-0.069,1.964-0.027,2.943-0.011c1.594,0.025,2.687,1.016,2.701,2.609
+                  c0.041,3.9,0.031,7.802,0,11.703c-0.012,1.33-0.771,2.244-2.046,2.533c-0.464,0.104-0.589,0.291-0.582,0.727
+                  c0.019,1.179,0.005,2.357,0.003,3.535C27.345,27.938,27.345,28.207,27.345,28.665z M20.73,15.677
+                  c0.067-0.188,0.104-0.24,0.104-0.292c0.01-3.616,0.006-7.23,0.029-10.848c0.004-0.585-0.315-0.609-0.75-0.609
+                  c-5.581,0.007-11.16,0.014-16.74-0.007C2.743,3.919,2.566,4.117,2.572,4.739c0.029,3.393,0.014,6.785,0.02,10.178
+                  c0,0.238,0.041,0.477,0.07,0.789c0.884,0,1.685,0,2.592,0c0,0.838,0,1.598,0,2.525c1.068-0.802,1.964-1.515,2.906-2.156
+                  c0.321-0.223,0.755-0.373,1.143-0.384c1.541-0.042,3.083-0.016,4.626-0.014C16.193,15.677,18.462,15.677,20.73,15.677z" />
+                <g>
+                  <circle cx="7.457" cy="9.917" r="1.438" />
+                  <circle cx="12.332" cy="9.917" r="1.438" />
+                  <circle cx="17.207" cy="9.917" r="1.438" />
+                </g>
+              </g>
+            </g>
+          </svg>
+        </a>
+
+      </div>
+    </div>
+  </nav>
+
+  <main>
+
+    <div class="bg-light overflow-hidden vh-100 vh-lg-unset">
+      <div class="row d-flex align-items-center mt-5 mt-lg-0 vh-100 vh-lg-unset">
+        <div class="col-lg-6 horivert-img mt-5 mt-lg-0">
+          <video autoplay muted loop playsinline style="width: 100%; height: auto; object-fit: cover;">
+            <source src="assets/HRes-Plugin.mp4" type="video/mp4">
+            Your browser does not support the video tag or the file format of this video. This is supposed to be a video showing a custom Revit plugin automatically inserting pipe penetrations.
+          </video>
+        </div>
+
+        <div class="row h-100 py-5 py-lg-0 col-lg-5 col-xxl-4 hero-textbox horivert-txtbox align-items-center" data-aos="fade-down">
+          <div>
+            <span class="fs-5 text-primary">Revit Programming</span>
+            <h1 class="display-1 fw-bold">8x Faster via Custom Revit Plugins</h1>
+            <p class="lead">Combining our construction knowledge and coding know-how, we can write custom
+              Revit plugins to automate your everyday modelling tasks.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+
+    <div class="py-vh-5 w-100 bg-gray-900 text-light overflow-hidden" id="expertise">
       <div class="container">
-        <a class="navbar-brand pe-4 fs-4" href="/">
-          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" zoomAndPan="magnify"
-            viewBox="0 0 375 374.999991" height="32" preserveAspectRatio="xMidYMid meet" class="bi bi-layers-half"
-            version="1.0">
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-xl-8 pb-5" data-aos="fade" data-aos-delay="100">
+            <h2 class="display-6 fw-bolder text-center">Unlock the Power of Revit via Revit API.</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-center">
+          <div class="col-12 col-xl-9">
+            <video autoplay muted loop playsinline style="border-radius: 20px; width: 100%; height: auto;">
+              <source src="assets/HRes-Coding.mp4" type="video/mp4">
+              Your browser does not support the video tag or the file format of this video. This is supposed to be a video showing Revit programming in Visual Studio.
+            </video>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between pt-3">
+          <div class="col-auto d-lg-flex d-none"></div>
+          <div class="col-lg-6 py-vh-2 mt-3 pb-0">
+            <h3 class="py-3 border-top border-dark">Revolutionise your modelling workflow with coding.</h3>
+            <h5 class="text-secondary">Revit API is the definitive gateway to the codebase Revit runs on.<br>
+              It is provided by Autodesk, enabling developers like us to interact directly with the Revit backend.<br>
+              You can automate your work, minimise errors, and deliver projects more efficiently through Revit
+              programming.
+            </h5>
+            <img class="py-5" src="assets/Logo-AutodeskADN.svg" alt="Autodesk Authorised Developer" />
+          </div>
+          <div class="col-lg-4 py-vh-2 pb-3 pb-lg-0">
+            <div data-aos="fade-left" data-aos-delay="300">
+              <h6 class="py-3">Model automation supercharged.</h6>
+              <p class="text-secondary">The Revit API is extensive, with almost every function available at the
+                developer's fingertip.<br>
+                For example, you can use Revit API to detect intersections via BoundingBoxIntersectsFilter under
+                Autodesk.Revit.DB namespace.<br>
+                Explore the entire <a href="https://www.revitapidocs.com/2024/" class="link-secondary" rel="nofollow"
+                  target="_blank">Revit API here</a>.
+              </p>
+            </div>
+            <div data-aos="fade-left" data-aos-delay="400">
+              <h6 class="py-3">Personalise your Revit with a specialist.</h6>
+              <p class="text-secondary">BIM Farers is an Autodesk Authorised Developer. As part of the Autodesk
+                Developer Network, we have access to a full suite of developer support.<br>
+                Combine this with our construction industry experience, and you can trust us to create the Revit
+                automation you've always dreamed about.<br>
+              </p>
+            </div>
+          </div>
+          <div class="col-auto d-lg-flex d-none"></div>
+        </div>
+        <div class="py-3 d-flex justify-content-center">
+          <button class="button-17" role="button"
+            onclick="location.href='mailto:info@bimfarers.com.au?subject=Tech Enquiry - ';">Reach Out</button>
+        </div>
+      </div>
+    </div>
+
+    <div class="py-vh-5 bg-light overflow-hidden" id="plugins">
+      <div class="container">
+        <div class="row d-flex justify-content-center">
+          <div class="col-lg-8 pb-5" data-aos="fade" data-aos-delay="100">
+            <h2 class="display-6 fw-bolder text-center">Explore Our Revit Plugins.</h2>
+          </div>
+        </div>
+        <div class="row d-flex justify-content-between align-items-center">
+          <div class="col-lg-7 col-xxl-6 mb-5 mb-md-4 mb-lg-0">
+            <div class="row gx-5 d-flex">
+              <div class="col-md-11">
+                <div class="shadow ratio ratio-16x9 rounded-4 align-self-end" style="overflow:hidden;">
+                    <div style="height: auto;">
+                      <script src="https://fast.wistia.com/embed/medias/a9twphvsn9.jsonp" async></script><script src="https://fast.wistia.com/assets/external/E-v1.js" async></script><div class="wistia_responsive_padding" style="padding:56.25% 0 0 0;position:relative;"><div class="wistia_responsive_wrapper" style="height:100%;left:0;position:absolute;top:0;width:100%;"><div class="wistia_embed wistia_async_a9twphvsn9 seo=true videoFoam=true" style="height:100%;position:relative;width:100%"><div class="wistia_swatch" style="height:100%;left:0;opacity:0;overflow:hidden;position:absolute;top:0;transition:opacity 200ms;width:100%;"><img src="https://fast.wistia.com/embed/medias/a9twphvsn9/swatch" style="filter:blur(5px);height:100%;object-fit:contain;width:100%;" alt="" aria-hidden="true" onload="this.parentNode.style.opacity=1;" /></div></div></div></div>
+                    </div>
+                </div>
+              </div>
+              <div class="col-md-5 col-4 offset-8 mb-5">
+                <div class="ratio ratio-1x1 m-n5 bp-center float-end" data-aos="fade-left"
+                  style="overflow:hidden;">
+                  <img src="assets/Screenshot-PipePeno.webp" style="width: auto;" loading="lazy"
+                    alt="Pipe fire collar" />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-5">
+            <div>
+              <div class="column d-flex">
+                <div>
+                  <img src="assets/Icon-PluginPipePeno.webp" style="width: 60px;" alt="Pipe Penetration Plugin icon" />
+                </div>
+                <h4 class="ms-2">
+                  <small class="text-secondary">BIMF Tools #01.</small>
+                  <br>Insert Pipe Penetrations
+                </h4>
+              </div>
+              <p>Combined penetration plans and services penetration elevations are becoming the industry norm in
+                Australia. Our Revit plugin automates the insertion of these penetration elements, eliminating the need
+                to spend hours preparing them.</p>
+              <ul>
+                <li>Intelligent pipe penetration recognition captures pipes on slope and ignores cast-ins and unintended
+                  drafting errors</li>
+                <li>Automatically detects and sets penetration diameter and thickness</li>
+                <li>Insert your own penetration elements or our provided default elements in seconds</li>
+              </ul>
+              <a href="https://apps.autodesk.com/RVT/en/Detail/Index?id=5576484736911034483&appLang=en&os=Win64" rel="nofollow" target="_blank" data-splitbee-event="Click Download"
+                class="link-dark pb-1 link-fancy me-2">
+                Download now on Autodesk App Store
+                <svg xmlns="http://www.w3.org/2000/svg" width="48" viewBox="0 0 500 281">
+                  <path
+                    d="M130.299 222.384L278.52 130.269H355.413C357.785 130.269 359.902 132.159 359.902 134.755C359.902 136.871 358.971 137.83 357.785 138.535L284.959 182.124C280.215 184.974 278.577 190.645 278.577 194.877L278.492 222.356H371V62.6708C371 59.5956 368.628 57 365.098 57H276.854L129 148.692V222.356H130.299V222.384Z"
+                    fill="black"></path>
+                </svg>
+              </a>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <div class="bg-light overflow-hidden">
+      <div class="row d-flex justify-content-end align-items-center">
+        <div class="col-lg-5 py-5">
+          <div class="container">
+            <div class="row d-flex justify-content-center">
+              <div class="col-lg-8" data-aos="fade">
+                <p class="text-secondary lead">Develop with us.</p>
+                <h2 class="display-6 mb-5">What would you like to achieve in Revit?</h2>
+                <a href="mailto:info@bimfarers.com.au?subject=Tech Enquiry - " data-splitbee-event="Click Download"
+                  aria-label="Tech Enquiry" class="link-dark pb-1 link-fancy me-2">
+                  Start Today
+                  <svg width="25px" height="25px" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <g id="SVGRepo_bgCarrier" stroke-width="0"></g>
+                    <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"></g>
+                    <g id="SVGRepo_iconCarrier">
+                      <path d="M9.49997 12.4L5 17.7999" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></path>
+                      <path d="M9.49997 12.4L5 7" stroke="#333333" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                      </path>
+                      <line x1="18" y1="18" x2="10" y2="18" stroke="#333333" stroke-width="2" stroke-linecap="round"
+                        stroke-linejoin="round"></line>
+                    </g>
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-6" style="max-height: 720px;" data-aos="fade">
+          <img src="assets/photo/HRes-Discuss3.webp" loading="lazy" style="width: 100%;"
+            alt="Photo of a technical discussion with laptops and ipads" />
+        </div>
+      </div>
+    </div>
+
+
+  </main>
+
+  <footer>
+    <div class="container small">
+      <div class="row py-5 d-flex justify-content-between">
+
+        <div class="col-12 col-lg-6 col-xl-3 border-end p-4 p-sm-5">
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28"
+            zoomAndPan="magnify" viewBox="0 0 375 374.999991" height="28" preserveAspectRatio="xMidYMid meet"
+            class="bi bi-layers-half" version="1.0">
             <defs>
               <clipPath id="f56487630f">
                 <path d="M 32.375 248 L 342.875 248 L 342.875 371.824219 L 32.375 371.824219 Z M 32.375 248 "
@@ -100,660 +390,147 @@
               d="M 187.441406 94.199219 C 187.550781 97.257812 187.625 100.320312 187.625 103.40625 C 187.625 167.429688 164.253906 226.003906 125.582031 271.109375 C 151.769531 262.5625 180.46875 259.925781 207.460938 271.449219 C 207.460938 271.449219 235.050781 178.277344 187.441406 94.199219 "
               fill-opacity="1" fill-rule="nonzero" />
             <g clip-path="url(#32c8f4f5f8)">
-              <path fill="#212529"
+              <path fill="#fff"
                 d="M 187.441406 94.199219 C 168.039062 59.929688 136.136719 27.167969 84.78125 2.847656 C 84.78125 2.847656 195.28125 109.558594 32.367188 327.507812 C 32.367188 327.507812 74.128906 287.894531 125.582031 271.109375 C 164.253906 226.003906 187.625 167.429688 187.625 103.40625 C 187.625 100.320312 187.550781 97.257812 187.441406 94.199219 "
                 fill-opacity="1" fill-rule="nonzero" />
             </g>
           </svg>
-          <span class="ms-1 fw-semibold" style="font-family: 'Gilam', sans-serif;">BIM Farers</span>
-        </a>
-    
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarSupportedContent">
-          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <address class="text-secondary mt-3">
+            <strong>BIM Farers</strong><br>
+            Suite 150, Level 1 East,<br>
+            678 Victoria St,<br>
+            Richmond, Victoria 3121<br>
+            <br>
+            <abbr title="0385648674"><a class="nav-link link-secondary ps-0" href="tel:0385648674">Call us
+                today!</a></abbr>
+            <br>
+            <div class="d-flex">
+              <abbr title="Email">E:</abbr>
+              <a class="nav-link link-secondary ps-0"
+                href="mailto:info@bimfarers.com.au">&nbsp;info@bimfarers.com.au</a>
+            </div>
+          </address>
+        </div>
+        <div class="col-12 col-lg-6 col-xl-3 border-end p-4 p-sm-5">
+          <h3 class="h6 mb-3">Explore</h3>
+          <ul class="nav flex-column">
             <li class="nav-item">
-              <a class="nav-link" href="#projects">
-                Projects
-              </a>
+              <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="aboutus">
-                About Us
-              </a>
+              <a class="nav-link link-secondary ps-0" href="#expertise">Expertise</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#services">
-                Services
-              </a>
+              <a class="nav-link link-secondary ps-0" href="#plugins">Plugins</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="automation">
-                Automation
-              </a>
+              <a class="nav-link link-secondary ps-0" href="aboutus">About Us</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#expertise">
-                Expertise
-              </a>
+              <a class="nav-link link-secondary ps-0" href="blog">Blog</a>
             </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#numbers">
-                Stats
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#workwithus">
-                Contact
-              </a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="blog">
-                Blog
-              </a>
-            </li>
-    
           </ul>
-          <a href="mailto:info@bimfarers.com.au?subject=Reaching Out - " data-splitbee-event="Click Download"
-            aria-label="Connect Now" class="link-dark pb-1 link-fancy me-2">
-            Connect Now
-            <svg fill="currentColor" version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg"
-              xmlns:xlink="http://www.w3.org/1999/xlink" width="28px" height="28px" viewBox="0 0 29.996 29.997"
-              xml:space="preserve">
-              <g>
-                <g>
-                  <path
-                    d="M27.345,28.665c-0.64-0.467-1.131-0.819-1.615-1.184c-1.549-1.158-3.076-2.353-4.656-3.468
-                  c-0.424-0.299-1.008-0.508-1.52-0.514c-3.367-0.045-6.736-0.01-10.104-0.037c-0.58-0.004-1.158-0.178-1.738-0.271
-                  c-0.006-0.09-0.013-0.179-0.019-0.27c0.841-0.639,1.671-1.295,2.533-1.904c0.182-0.128,0.479-0.125,0.725-0.126
-                  c3.255-0.009,6.511-0.019,9.766,0.014c0.383,0.004,0.811,0.188,1.135,0.41c0.938,0.646,1.836,1.352,2.9,2.146
-                  c0-0.944,0-1.709,0-2.57c0.893,0,1.69,0,2.534,0c0-3.955,0-7.809,0-11.75c-1.169,0-2.286-0.028-3.397,0.033
-                  c-0.156,0.009-0.406,0.455-0.412,0.702c-0.035,1.823-0.011,3.648-0.021,5.473c-0.014,1.921-0.983,2.896-2.908,2.899
-                  c-3.366,0.01-6.735-0.021-10.104,0.023c-0.513,0.008-1.101,0.211-1.52,0.512c-1.895,1.354-3.74,2.772-5.606,4.168
-                  c-0.191,0.143-0.398,0.264-0.736,0.486c0-1.545-0.017-2.937,0.009-4.324c0.01-0.533-0.047-0.839-0.698-0.969
-                  c-1.118-0.224-1.87-1.226-1.876-2.392c-0.021-3.958-0.025-7.915-0.003-11.872c0.006-1.431,1.074-2.528,2.5-2.534
-                  C8.661,1.326,14.807,1.327,20.953,1.35c1.387,0.006,2.423,1.079,2.49,2.464c0.029,0.616,0.049,1.237,0.004,1.852
-                  c-0.051,0.671,0.132,0.961,0.877,0.907c0.977-0.069,1.964-0.027,2.943-0.011c1.594,0.025,2.687,1.016,2.701,2.609
-                  c0.041,3.9,0.031,7.802,0,11.703c-0.012,1.33-0.771,2.244-2.046,2.533c-0.464,0.104-0.589,0.291-0.582,0.727
-                  c0.019,1.179,0.005,2.357,0.003,3.535C27.345,27.938,27.345,28.207,27.345,28.665z M20.73,15.677
-                  c0.067-0.188,0.104-0.24,0.104-0.292c0.01-3.616,0.006-7.23,0.029-10.848c0.004-0.585-0.315-0.609-0.75-0.609
-                  c-5.581,0.007-11.16,0.014-16.74-0.007C2.743,3.919,2.566,4.117,2.572,4.739c0.029,3.393,0.014,6.785,0.02,10.178
-                  c0,0.238,0.041,0.477,0.07,0.789c0.884,0,1.685,0,2.592,0c0,0.838,0,1.598,0,2.525c1.068-0.802,1.964-1.515,2.906-2.156
-                  c0.321-0.223,0.755-0.373,1.143-0.384c1.541-0.042,3.083-0.016,4.626-0.014C16.193,15.677,18.462,15.677,20.73,15.677z" />
-                  <g>
-                    <circle cx="7.457" cy="9.917" r="1.438" />
-                    <circle cx="12.332" cy="9.917" r="1.438" />
-                    <circle cx="17.207" cy="9.917" r="1.438" />
-                  </g>
-                </g>
-              </g>
-            </svg>
-          </a>
-    
         </div>
-      </div>
-    </nav>
-
-    <main>
-
-<div class="container">
-  <div class="row hero-container">
-    <div class="position-relative">
-      <div class="container">
-        <div class="row">
-          <div class="col-lg-5 py-vh-4 hero-textbox" data-aos="fade-right">
-            <span class="fs-5 text-primary">Smart Hybrid Outsource</span>
-            <h1 class="display-1 fw-bold">Get your engineering plans faster</h1>
-            <p class="lead">Our engineers & BIM modellers from Melbourne & Malaysia can deliver
-              coordinated Revit models & compliant building services shop drawings at a competitive price.</p>
-            <a href="#workwithus" class="btn btn-primary btn-xl shadow me-3 rounded-pill mt-3">Get Started</a>
+        <div class="col-12 col-sm-6 col-xl-3 border-end p-4 p-sm-5">
+          <h3 class="h6 mb-3">Australia</h3>
+          <div class="h-100 bg-cover mx-auto"
+            style="background-image: url(assets/Map-Melb.webp); min-height: 180px; max-width:280px; border-radius: 10px; -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%);">
           </div>
-          <div class="col-lg-8 mt-4 mt-lg-0 h-100 position-absolute top-0 end-0 hero-bg bg-cover" style="background-image: url(assets/RevitRender2.webp); " data-aos="fade-up">
-            <p class="h6" style="position: absolute; bottom: 0; right: 1rem; text-align: right;">Fifteen 85<br>15-85 Gladstone Street, South Melbourne</p>
+        </div>
+        <div class="col-12 col-sm-6 col-xl-3 p-4 p-sm-5">
+          <h3 class="h6 mb-3">Malaysia</h3>
+          <div class="h-100 bg-cover mx-auto"
+            style="background-image: url(assets/Map-KL.webp); min-height: 180px; max-width:280px; border-radius: 10px; -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%);">
           </div>
         </div>
       </div>
     </div>
-  </div>
-</div>
 
-<div class="overflow-hidden" id="projects">
-  <div class="mobile-hide position-relative overflow-hidden w-100 bg-light">
-    <div class="container">
-      <div class="row" style="padding-top: 9vh; padding-bottom: 2vh;">
-        <div class="col-lg-12 mb-2">
-          <span class="text-primary">Why you can trust us</span>
-          <p class="pt-2 w-light fs-5">We've worked on a variety of iconic builds in Melbourne alongside reputable
-            builders, consultants,
-            and contractors. These projects include BTR apartments, mid-rise student accommodation, hotels and mixed
-            developments.
-          </p>
-        </div>
-      </div>
+    <div class="mobile-show container text-center py-3 small">
+      <a class="nav-link text-decoration-underline" href="#workwithus">
+        Work with us
+      </a>
     </div>
-    <div class="gallery-carousel">
-      <div class="img-box">
-        <img src="assets/HomeDocklands.webp" loading="lazy" height="800" alt="Home Docklands" />
-        <div class="img-caption">
-          <h3>Home Docklands</h3>
-        </div>
-      </div>
-      <div class="img-box">
-        <img src="assets/CityRoad.webp" loading="lazy" height="800" alt="Madison Grand" />
-        <div class="img-caption">
-          <h3>Madison Grand</h3>
-        </div>
-      </div>
-      <div class="img-box">
-        <img src="assets/Seafarers.webp" loading="lazy" height="800" alt="Seafarers" />
-        <div class="img-caption">
-          <h3>Seafarers</h3>
-        </div>
-      </div>
-      <div class="img-box">
-        <img src="assets/GrattanStRender.webp" loading="lazy" height="800" alt="Journal Student Living" />
-        <div class="img-caption">
-          <h3>Journal Student Living</h3>
-        </div>
-      </div>
-      <div class="img-box">
-        <img src="assets/Gladstone15.webp" loading="lazy" height="810" alt="Fifteen 85" />
-        <div class="img-caption">
-          <h3>Fifteen 85</h3>
-        </div>
-      </div>
-      <div class="img-box">
-        <img src="assets/Indi-Footscray.webp" loading="lazy" height="800" alt="Indi Footscray" />
-        <div class="img-caption">
-          <h3>Indi Footscray</h3>
-        </div>
-      </div>
-      <!-- <div class="img-box" style="background: url(assets/);"><h3>Albert Fields</h3></div> -->
+    <div class="container text-center py-3 small">© 2024 BIM Farers. All rights reserved.
     </div>
-  </div>
-  <!-- Slider container -->
-  <div class="mobile-show container-md py-vh-4 overflow-hidden">
-    <span class="text-primary lead" style="left: 20px; position: relative; font-weight: 400;">Our Projects:</span>
-    <div class="slider">
-      <!-- slide 1 -->
-      <div class="slide">
-        <img src="assets/Seafarers.webp" alt="Seafarers" />
-      </div>
+  </footer>
 
-      <!-- slide 2 -->
-      <div class="slide">
-        <img src="assets/CityRoad.webp" loading="lazy" alt="Madison Grand" />
-      </div>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+  <script>
+    // Script to remove preloader when fully loaded
+    $(window).on("load", function () {
+      $(".loader-wrapper").fadeOut("slow");
+      $("body").removeClass("preloadbody");
+    });
+  </script>
 
-      <!-- slide 3 -->
-      <div class="slide">
-        <img src="assets/GrattanStRender.webp" loading="lazy" alt="Journal Student Living" />
-      </div>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/aos.js"></script>
+  <script>
+    AOS.init({
+      duration: 800, // values from 0 to 3000, with step 50ms
+    });
+  </script>
 
-      <!-- slide 4 -->
-      <div class="slide">
-        <img src="assets/HomeDocklands.webp" loading="lazy" alt="Home Docklands" />
-      </div>
+  <script>
+    let scrollpos = window.scrollY
+    const header = document.querySelector(".navbar")
+    const header_height = header.offsetHeight
 
-      <!-- Control buttons -->
+    const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
+    const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
 
-    </div>
-    <button class="btn-carousel btn-next">></button>
-    <!-- <button class="btn-carousel btn-prev"><</button> -->
-  </div>
-</div>
+    window.addEventListener('scroll', function () {
+      scrollpos = window.scrollY;
 
-<div class="bg-light overflow-hidden">
-  <div class="row d-flex align-items-center">
-    <div class="col-lg-6 horivert-img">
-      <img src="assets/photo/HRes-CandidGroup1.webp" loading="lazy" style="height: 100%;" alt="Candid group photo of BIM Farers team members"/>
-    </div>
+      if (scrollpos >= header_height) { add_class_on_scroll() }
+      else { remove_class_on_scroll() }
 
-    <div class="py-vh-2 col-lg-4 horivert-txtbox" data-aos="fade-left">
-      <div class="row d-flex justify-content-center">
-        <div>
-          <p class="text-secondary lead">Who we are.</p>
-          <h2 class="display-6 mb-5">We are engineers, architects and designers making strides in cloud construction.</h2>
-          <a href="aboutus" data-splitbee-event="Click Download"
-              aria-label="About Us" class="link-dark pb-1 link-fancy me-2">
-              About Us
-              <svg fill="#000000" width="23px" height="23px" viewBox="0 0 36 36" version="1.1"
-                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>digital-signature-symbol</title>
-                <path
-                  d="M17,33.9c-3.9,0-7.9-1.5-10.5-4.5c-0.9,0.7-2,1.3-3.1,1.8c-0.5,0.2-1.1,0-1.3-0.5c-0.2-0.5,0-1.1,0.5-1.3c1-0.4,1.9-0.9,2.7-1.5c-1.2-1.9-1.9-4.3-1.9-7.1c0-5.3,2.5-8.1,4.8-8.1c1.5,0,3.2,1.2,3.2,4.7c0,4.7-1.1,8.2-3.5,10.8c2.2,2.6,5.6,3.9,9,3.9c0.6,0,1,0.4,1,1S17.6,33.9,17,33.9z M8.2,14.6c-1,0-2.8,1.8-2.8,6.1c0,2.2,0.5,4.1,1.4,5.6c1.8-2.1,2.7-5.1,2.7-9.1C9.5,15.7,9,14.6,8.2,14.6z" />
-                <path
-                  d="M33.3,4.8c-0.8-1.4-2.1-2.4-3.6-2.8c-0.5-0.1-1.1,0.2-1.2,0.7l-0.9,3.4l-1.6-2.8c-0.1-0.2-0.4-0.4-0.7-0.5c-0.3-0.1-0.6,0-0.8,0.2c-1.1,0.8-1.8,1.9-2.2,3.2l-4.2,15.4c-0.4,1.5-0.2,3.2,0.6,4.6c0.6,1.1,1.6,1.9,2.7,2.5l-1.1,4c-0.1,0.5,0.2,1.1,0.7,1.2c0.1,0,0.2,0,0.3,0c0.4,0,0.8-0.3,1-0.7l1.1-3.9c0.2,0,0.4,0,0.6,0c1,0,2-0.3,3-0.8c1.4-0.8,2.4-2.1,2.8-3.6l1.6-5.8c0,0,0,0,0,0l1.6-5.8c0.1-0.4,0-0.8-0.4-1.1c-0.3-0.2-0.8-0.3-1.1-0.1l-4,2.3l0.6-2.1l5.7-3.2c0.3-0.2,0.5-0.5,0.5-0.8C34.2,7.1,33.9,5.9,33.3,4.8z M24.2,6.8c0.1-0.5,0.3-0.9,0.6-1.3l1.9,3.4l-1.4,5.1l-2.1-3.7L24.2,6.8zM20.4,25.2c-0.5-0.9-0.7-2-0.4-3l2.5-9.2l2.1,3.7L23.2,22c0,0,0,0,0,0l-1.3,4.7C21.3,26.4,20.8,25.9,20.4,25.2z M27.7,24.3c-0.3,1-0.9,1.9-1.9,2.4c-0.6,0.4-1.3,0.5-2,0.5L25,23l3.7-2.1L27.7,24.3z M30.3,15.1l-0.8,3.1l-3.7,2.1l0.8-3.1L30.3,15.1zM28.6,9.6l0.1-0.4c0.1-0.1,0.1-0.3,0.1-0.4l1.2-4.5c0.6,0.3,1.1,0.9,1.5,1.5c0.3,0.6,0.5,1.2,0.5,1.8L28.6,9.6z" />
-                <rect width="36" height="36" fill-opacity="0" />
-              </svg>
-            </a>
-        </div>
-      </div>
-    </div>
-  </div>
-</div>
+      console.log(scrollpos)
+    })
+  </script>
 
-<div class="py-vh-5 w-100 bg-gray-900 text-light overflow-hidden" id="services">
-  <div class="container">
-      <div class="row d-flex justify-content-end">
-<div class="col-lg-8" data-aos="fade" data-aos-delay="100"><h2 class="display-6">Let us help you shape your building services design.</h2></div>
-</div>
-<div class="row d-flex">
-<div class="col-md-6 col-lg-4 mobile-service-1" data-aos="fade-up" data-aos-delay="200">
-  <span class="h5 fw-lighter text-secondary">01. Small-scale</span>
-  <h3 class="py-5 border-top border-dark">Need consultant's plans altered or as-builts done?</h3>
-  <p>Email us a description or a markup of the changes you need to produce your shop drawings. We can provide a quote for your job.</p>
-  <!-- <a href="#" class="link-fancy">Learn more
-  </a> -->
-</div>
+  <script src="js/carousel.min.js"></script>
 
-<div class="col-md-6 col-lg-4 py-vh-4 pb-0 mobile-service-2" data-aos="fade-up" data-aos-delay="400">
-  <span class="h5 fw-lighter text-secondary">02. Mid-scale</span>
-  <h3 class="py-5 border-top border-dark">Have a low rise or medium rise building work and looking for engineering or drafting service?</h3>
-  <p>Not quite ready to engage full-time staff but require professional help for your project?<br>
-    We can sit down with you to go over your job scope and devise a part-time arrangement to work on your building services design and shop drawings.</p>
-  <!-- <a href="#" class="link-fancy">Learn more
-  </a> -->
-</div>
+  <script>
+    // Script to run animated number or decimal counter 
+    // REF : https://stackoverflow.com/a/31706360
 
-<div class="col-md-6 col-lg-4 py-vh-6 pb-0 mobile-service-3" data-aos="fade-up" data-aos-delay="600">
-  <span class="h5 fw-lighter text-secondary">03. Large-scale</span>
-  <h3 class="py-5 border-top border-dark">Growing your design team to work on building design and construct projects?</h3>
-  <p>Engage a dedicated building professional in a hybrid outsource structure.<br>
-    We recruit new talents, on-shore or off-shore, and assign them to work on your projects full-time.<br>
-    The recruitment will be tailored to your unique requirements and you will be invited to interview handpicked candidates.<br>
-    Let us handle the workstation, BIM 360 setup and payroll so that you can focus on meeting builders' construction programs!
-  </p>
-  <!-- <a href="#" class="link-fancy">Learn more
-  </a> -->
-</div>
-</div>
-<div class="d-flex justify-content-center">
-  <a href="#workwithus" class="btn btn-primary btn-xl me-3 rounded-pill mt-5">Get Started</a>
-</div>
-  </div>
-</div>
-
-<div class="py-vh-4 bg-light overflow-hidden" id="expertise">
-  <div class="container">
-    <div class="row d-flex justify-content-between align-items-center">
-      <div class="col-lg-8 col-xl-7 col-xxl-6 mb-5 mb-md-4 mb-lg-0">
-        <div class="row gx-5 d-flex">
-          <div class="col-md-11">
-            <div class="shadow ratio ratio-16x9 rounded-4 align-self-end" data-aos="fade-right" style="overflow:hidden;">
-              <img src="assets/photo/HRes-Discuss1.webp" loading="lazy" style="height: auto;" alt="Candid photo of three construction professionals"/>
-            </div>
-          </div>
-          <div class="col-md-5 col-6 offset-md-1">
-            <div class="shadow ratio ratio-1x1 ratio-md-9x16 rounded-4 mt-5 bp-center float-end" data-aos="fade-up" style="overflow:hidden;">
-              <img src="assets/Screenshot-DrainagePlan.webp" style="width: auto;" loading="lazy" alt="Drainage plan example"/>
-            </div>
-          </div>
-          <div class="col-md-5 col-6 offset-md-1">
-            <div class="shadow ratio ratio-9x16 rounded-4 mt-5" data-aos="fade-left" style="overflow:hidden;">
-              <img src="assets/photo/HRes-Discuss2.webp" loading="lazy" height="483" style="width: auto; right: 0; left: unset;" alt="Engineering group discussion on an ipad"/>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-      <div class="col-lg-4">
-        <div>
-          <h4>
-            <small>01.</small>
-            <br>Leverage Construction Tech
-          </h4>
-          <div class="d-inline float-end ms-4 mb-4 mt-2">
-            <img src="assets/Logo-ADNB.webp" loading="lazy" height="30" alt="Autodesk Authorised Developer"/>
-          </div>
-          <p>We've used them all: Revit, AutoCad, Revizto, BIM Track, Navisworks, Aconex, iTWO cx, Bluebeam, Dynamo.
-            BIM Farers is an Autodesk Authorised Developer. We have the capability to develop custom Revit plugins to automate your drafting tasks, saving you time and money.
-          </p>
-          <a href="automation" data-splitbee-event="Click Download"
-              aria-label="Custom Revit Plugins" class="link-dark pb-1 link-fancy me-2">
-              Explore Our Revit Plugins
-              <svg xmlns="http://www.w3.org/2000/svg" width="48" viewBox="0 0 500 281">
-                <path
-                  d="M130.299 222.384L278.52 130.269H355.413C357.785 130.269 359.902 132.159 359.902 134.755C359.902 136.871 358.971 137.83 357.785 138.535L284.959 182.124C280.215 184.974 278.577 190.645 278.577 194.877L278.492 222.356H371V62.6708C371 59.5956 368.628 57 365.098 57H276.854L129 148.692V222.356H130.299V222.384Z"
-                  fill="black"></path>
-              </svg>
-            </a>
-        </div>
-        
-        <div>
-          <h4 class="pt-5">
-            <small>02.</small>
-            <br>Professional Engineers Registration
-          </h4>
-          <div class="d-inline float-end ms-4 mb-4 mt-2">
-            <img src="assets/Logo-ParliamentVic.webp" loading="lazy" alt="Victoria Parliament Logo" width="48">
-          </img>
-          </div>
-          <p>The Professional Engineers Registration Act 2019 requires one in Victoria to be registered with the Business Licensing Authority (BLA) to provide professional engineering services.
-            The registration allows BIM Farers to issue Regulation 126 certificate of compliance for building permits and offer engineered building service designs via Performance Solutions.
-          </p>
-        </div>
-  
-      </div>
-  
-    </div>
-  </div>
-</div>
-
-<div class="py-vh-5 w-100 overflow-hidden" id="numbers">
-  <div class="container">
-      <div class="row d-flex justify-content-between align-items-center">
-  <div class="col-lg-5">
-    <h3 class="py-5 border-top border-dark" data-aos="fade-right">We built it on Cloud first.</h3>
-</div>
-<div class="col-lg-6">
-  <div class="row">
-    <div class="col-12">
-    <h2 class="display-6 mb-5">Our primary clients are contractors and we work with trades day in, day out. We emphasise buildability in our building design solutions.</h2>
-    </div>
-    <div class="col-lg-6">
-      <div class="d-flex display-1 fw-bold py-4" id="counter"><div class="js-num">17.2</div><p>k</p></div>
-      <p class="text-black-50">With upwards of 17,200 hours of logged active Revit usage, we can confidently say modelling and drafting are our bread and butter.</p>
-    </div>
-    <div class="col-lg-6">
-      <div class="d-flex display-1 fw-bold py-4"><p>$</p><div class="js-num">1.89</div><p>b</p></div>
-      <p class="text-black-50">The combined project value of the builds that we are involved in is not a small amount, and it means we can tackle projects of any size head-on.</p>
-    </div>
-  </div>
-</div>
-</div>
-
-  </div>
-</div>
-
-<div class="bg-light overflow-hidden">
-  <div class="row d-flex justify-content-end align-items-center">
-    <div class="col-lg-5 py-5">
-      <div class="container">
-        <div class="row d-flex justify-content-center">
-          <div class="col-lg-8" data-aos="fade">
-            <p class="text-secondary lead">Work-life with us.</p>
-            <h2 class="display-6 mb-5">Are you seeking an exciting role that will challenge and inspire you?</h2>
-            <a href="mailto:info@bimfarers.com.au?subject=Job Application - " data-splitbee-event="Click Download"
-              aria-label="Connect Now" class="link-dark pb-1 link-fancy me-2">
-              Careers
-              <svg fill="#000000" width="23px" height="23px" viewBox="0 0 36 36" version="1.1"
-                preserveAspectRatio="xMidYMid meet" xmlns="http://www.w3.org/2000/svg"
-                xmlns:xlink="http://www.w3.org/1999/xlink">
-                <title>digital-signature-symbol</title>
-                <path
-                  d="M17,33.9c-3.9,0-7.9-1.5-10.5-4.5c-0.9,0.7-2,1.3-3.1,1.8c-0.5,0.2-1.1,0-1.3-0.5c-0.2-0.5,0-1.1,0.5-1.3c1-0.4,1.9-0.9,2.7-1.5c-1.2-1.9-1.9-4.3-1.9-7.1c0-5.3,2.5-8.1,4.8-8.1c1.5,0,3.2,1.2,3.2,4.7c0,4.7-1.1,8.2-3.5,10.8c2.2,2.6,5.6,3.9,9,3.9c0.6,0,1,0.4,1,1S17.6,33.9,17,33.9z M8.2,14.6c-1,0-2.8,1.8-2.8,6.1c0,2.2,0.5,4.1,1.4,5.6c1.8-2.1,2.7-5.1,2.7-9.1C9.5,15.7,9,14.6,8.2,14.6z" />
-                <path
-                  d="M33.3,4.8c-0.8-1.4-2.1-2.4-3.6-2.8c-0.5-0.1-1.1,0.2-1.2,0.7l-0.9,3.4l-1.6-2.8c-0.1-0.2-0.4-0.4-0.7-0.5c-0.3-0.1-0.6,0-0.8,0.2c-1.1,0.8-1.8,1.9-2.2,3.2l-4.2,15.4c-0.4,1.5-0.2,3.2,0.6,4.6c0.6,1.1,1.6,1.9,2.7,2.5l-1.1,4c-0.1,0.5,0.2,1.1,0.7,1.2c0.1,0,0.2,0,0.3,0c0.4,0,0.8-0.3,1-0.7l1.1-3.9c0.2,0,0.4,0,0.6,0c1,0,2-0.3,3-0.8c1.4-0.8,2.4-2.1,2.8-3.6l1.6-5.8c0,0,0,0,0,0l1.6-5.8c0.1-0.4,0-0.8-0.4-1.1c-0.3-0.2-0.8-0.3-1.1-0.1l-4,2.3l0.6-2.1l5.7-3.2c0.3-0.2,0.5-0.5,0.5-0.8C34.2,7.1,33.9,5.9,33.3,4.8z M24.2,6.8c0.1-0.5,0.3-0.9,0.6-1.3l1.9,3.4l-1.4,5.1l-2.1-3.7L24.2,6.8zM20.4,25.2c-0.5-0.9-0.7-2-0.4-3l2.5-9.2l2.1,3.7L23.2,22c0,0,0,0,0,0l-1.3,4.7C21.3,26.4,20.8,25.9,20.4,25.2z M27.7,24.3c-0.3,1-0.9,1.9-1.9,2.4c-0.6,0.4-1.3,0.5-2,0.5L25,23l3.7-2.1L27.7,24.3z M30.3,15.1l-0.8,3.1l-3.7,2.1l0.8-3.1L30.3,15.1zM28.6,9.6l0.1-0.4c0.1-0.1,0.1-0.3,0.1-0.4l1.2-4.5c0.6,0.3,1.1,0.9,1.5,1.5c0.3,0.6,0.5,1.2,0.5,1.8L28.6,9.6z" />
-                <rect width="36" height="36" fill-opacity="0" />
-              </svg>
-            </a>
-          </div>
-        </div>
-      </div>
-    </div>
-    <div class="col-lg-6 horivert-img" style="max-height: 720px;" data-aos="fade-left">
-      <img src="assets/photo/HRes-Career.webp" loading="lazy" style="width: 100%;" alt="Candid photo of a happy BIM modeller" />
-    </div>
-  </div>
-</div>
-
-<div class="py-vh-6 bg-gray-900 text-light w-100 overflow-hidden" id="workwithus">
-  <div class="container">
-    <div class="row d-flex justify-content-center">
-      <div class="row d-flex justify-content-center text-center">
-  <div class="col-lg-8 text-center" data-aos="fade" data-aos-delay="100">
-        <p class="text-secondary lead">Let´s collaborate!</p>
-    <h2 class="display-6 mb-5">Whether you have a few plans to amend or a mixed development to design, just get in touch with a brief or a principal project requirement. We will assess the scope and reach out with more details. Everything begins with a simple conversation!</h2>
-  </div>
-  <div class="col-12 mb-4">
-    <!-- <a href="#" class="btn btn-warning btn-xl shadow me-3 mt-4" data-aos="fade-down">Get in contact</a> -->
-    <button class="button-17" role="button" onclick="location.href='mailto:info@bimfarers.com.au?subject=Reaching Out - ';">Connect Now</button>
-  </div>
-</div>
-
-    </div>
-  </div>
-</div>
-
-<div class="container">
-  <div class="d-inline d-sm-flex row py-vh-4 align-items-center">
-    <div class="col my-3 my-sm-0">
-      <span class="fs-6">We've worked alongside:</span>
-    </div>
-    <div class="col-flex opacity-50 my-3 my-sm-0" data-aos="fade-up" data-aos-duration="250">
-      <svg xmlns="http://www.w3.org/2000/svg" height="36" width="100" viewBox="0 0 191.53 52.93">
-        <title>Icon</title>
-        <g>
-            <g>
-                <polygon class="symbol" points="26.47 39.7 13.23 26.47 26.47 13.23 39.7 26.47 52.93 13.23 39.7 0 13.23 0 0 13.23 0 39.7 13.23 52.93 39.7 52.93 52.93 39.7 39.7 26.47 26.47 39.7"></polygon>
-                <rect class="text" x="66.17" y="8.8" width="8.33" height="35.33"></rect>
-                <path class="text" d="M108,33c-2.74,2.5-5.06,3.94-8.78,4h0a9.57,9.57,0,0,1-6.78-2.81,9.83,9.83,0,0,1-2.92-7v-.77c0-5.94,4.16-10.42,9.67-10.42,3.05,0,5.7,1.18,8.61,3.81L108,20l5.31-6.12-.24-.24c-3.82-3.76-8.11-5.44-13.9-5.44a17.93,17.93,0,0,0-18.4,18.26v.1A17.83,17.83,0,0,0,98.89,44.72a18,18,0,0,0,14.45-6.29l.23-.25-5.33-5.39Z"></path>
-                <path class="text" d="M135.18,8.21a19,19,0,0,0-13.48,5.36,18,18,0,0,0-5.32,12.9v.1a17.91,17.91,0,0,0,5.27,12.84,19.63,19.63,0,0,0,26.91,0,18,18,0,0,0,5.32-12.89v-.1a17.92,17.92,0,0,0-5.27-12.85A18.91,18.91,0,0,0,135.18,8.21Zm10,18.36c0,5.93-4.31,10.41-10,10.41s-10.12-4.52-10.12-10.51v-.1c0-5.94,4.31-10.42,10-10.42s10.12,4.52,10.12,10.52Z"></path>
-                <polygon class="text" points="183.3 8.8 183.3 29.41 167.62 8.8 160.06 8.8 160.06 44.13 168.29 44.13 168.29 22.84 184.52 44.13 191.53 44.13 191.53 8.8 183.3 8.8"></polygon>
-            </g>
-        </g>
-      </svg>  
-    </div>
-    
-    <div class="col-flex opacity-50 my-3 my-sm-0" data-aos="fade-up" data-aos-duration="500">
-      <svg xmlns="http://www.w3.org/2000/svg" height="36" width="180" viewBox="0 0 284 31">
-        <title>Multiplex</title>
-        <g fill-rule="evenodd">
-          <path d="M24.19 0l-4.929 12.462L14.286 0H0v30.424h9.424V9.5l9.78 17.27 9.843-17.27v20.924h9.427V0z" />
-          <path
-            d="M65.014 0h9.78v18.128c0 1.794-.293 3.5-.871 5.094a11.12 11.12 0 01-2.75 4.185c-1.258 1.196-2.551 2.034-3.933 2.52-1.901.682-4.182 1.021-6.86 1.021a45.09 45.09 0 01-5.042-.305c-1.826-.218-3.346-.62-4.567-1.24-1.233-.611-2.356-1.49-3.368-2.626-1.022-1.134-1.72-2.305-2.094-3.505-.61-1.933-.902-3.649-.902-5.143V0h9.776v18.56c0 1.66.477 2.959 1.435 3.886.953.94 2.287 1.402 3.993 1.402 1.68 0 3.009-.454 3.96-1.38.963-.92 1.443-2.219 1.443-3.908V0z" />
-          <path d="M80.938 0h9.802v22.937h15.296v7.488H80.938z" />
-          <path d="M102.488 0h29.788v7.51h-9.988v22.916h-9.805V7.51h-9.995z" />
-          <path d="M138.287 30.426h9.824V0h-9.824z" />
-          <path
-            d="M155.103.002h16.277c3.551 0 6.204.806 7.973 2.428 1.773 1.615 2.652 3.925 2.652 6.905 0 3.076-.962 5.48-2.885 7.214-1.92 1.726-4.867 2.586-8.818 2.586h-5.359v11.293h-9.84V0zm9.84 12.973h2.4c1.893 0 3.208-.319 3.977-.946.764-.632 1.145-1.444 1.145-2.424 0-.959-.325-1.76-.997-2.424-.652-.669-1.907-.993-3.734-.993h-2.79v6.788z" />
-          <path d="M186.457 0h9.8v22.937h15.292v7.488h-25.092z" />
-          <path d="M216.829 0h24.742v6.495h-15.49v5.16h15.323v6.209h-15.322v5.02h15.609v7.542h-24.862z" />
-          <path
-            d="M245.962 0h12.224l6.362 9.356L270.736 0h12.11l-11.183 14.733 12.234 15.692h-12.474l-7.086-9.774-7.106 9.774H244.84l12.392-15.855z" />
-          <path d="M0 .002h14.287l4.974 9.965L24.19.002h14.284v30.427h-9.427V9.503l-9.843 17.27-9.78-17.27v20.925H0z" />
-        </g>
-      </svg>
-    </div>
-
-    <div class="col-flex my-3 my-sm-0" data-aos="fade-up" data-aos-duration="750">
-      <img src="assets/Logo-Hacer.webp" loading="lazy" height="50" alt="Hacer Group" title="Hacer Group"/>
-    </div>
-
-    <div class="col-flex my-3 my-sm-0" data-aos="fade-up" data-aos-duration="1000">
-      <img src="assets/Logo-Crema.webp" loading="lazy" width="100" alt="Crema Constructions" title="Crema Constructions"/>
-    </div>
-
-    <div class="col-flex my-3 my-sm-0" data-aos="fade-up" data-aos-duration="1250">
-      <img src="assets/Logo-CPC.webp" loading="lazy" height="50" alt="Complete Plumbing Contracting" title="Complete Plumbing Contracting"/>
-    </div>
-
-    <div class="col-flex my-3 my-sm-0" data-aos="fade-up" data-aos-duration="1500">
-      <img src="assets/Logo-Prime.webp" loading="lazy" height="50" alt="Prime Electrical & Data" title="Prime Electrical & Data"/>
-    </div>
-
-  </div>
-</div>
-
-    </main>
-
-<footer>
-  <div class="container small border-top">
-    <div class="row py-5 d-flex justify-content-between">
-
-<div class="col-12 col-lg-6 col-xl-3 border-end p-4 p-sm-5">
-  <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="28" zoomAndPan="magnify"
-    viewBox="0 0 375 374.999991" height="28" preserveAspectRatio="xMidYMid meet" class="bi bi-layers-half" version="1.0">
-    <defs>
-      <clipPath id="f56487630f">
-        <path d="M 32.375 248 L 342.875 248 L 342.875 371.824219 L 32.375 371.824219 Z M 32.375 248 "
-          clip-rule="nonzero" />
-      </clipPath>
-      <clipPath id="32c8f4f5f8">
-        <path d="M 32.375 2.824219 L 188 2.824219 L 188 328 L 32.375 328 Z M 32.375 2.824219 " clip-rule="nonzero" />
-      </clipPath>
-    </defs>
-    <g clip-path="url(#f56487630f)">
-      <path fill="#0a8ae6"
-        d="M 32.367188 337.179688 C 115.6875 320.710938 186.414062 323.429688 190.347656 343.25 C 192.007812 351.621094 181.476562 361.707031 162.476562 371.804688 C 303.613281 342.292969 342.878906 248.332031 342.878906 248.332031 C 280.707031 285.105469 150.796875 274.859375 32.367188 337.179688 "
-        fill-opacity="1" fill-rule="nonzero" />
-    </g>
-    <path fill="#f40042"
-      d="M 187.441406 94.199219 C 187.550781 97.257812 187.625 100.320312 187.625 103.40625 C 187.625 167.429688 164.253906 226.003906 125.582031 271.109375 C 151.769531 262.5625 180.46875 259.925781 207.460938 271.449219 C 207.460938 271.449219 235.050781 178.277344 187.441406 94.199219 "
-      fill-opacity="1" fill-rule="nonzero" />
-    <g clip-path="url(#32c8f4f5f8)">
-      <path fill="#fff"
-        d="M 187.441406 94.199219 C 168.039062 59.929688 136.136719 27.167969 84.78125 2.847656 C 84.78125 2.847656 195.28125 109.558594 32.367188 327.507812 C 32.367188 327.507812 74.128906 287.894531 125.582031 271.109375 C 164.253906 226.003906 187.625 167.429688 187.625 103.40625 C 187.625 100.320312 187.550781 97.257812 187.441406 94.199219 "
-        fill-opacity="1" fill-rule="nonzero" />
-    </g>
-  </svg>
-  <address class="text-secondary mt-3">
-    <strong>BIM Farers</strong><br>
-    Suite 150, Level 1 East,<br>
-    678 Victoria St,<br>
-    Richmond, Victoria 3121<br>
-    <br>
-    <abbr title="0385648674"><a class="nav-link link-secondary ps-0" href="tel:0385648674">Call us
-        today!</a></abbr>
-    <br>
-    <div class="d-flex">
-      <abbr title="Email">E:</abbr>
-      <a class="nav-link link-secondary ps-0" href="mailto:info@bimfarers.com.au">&nbsp;info@bimfarers.com.au</a>
-    </div>
-  </address>
-</div>
-<div class="col-12 col-lg-6 col-xl-3 border-end p-4 p-sm-5">
-  <h3 class="h6 mb-3">Explore</h3>
-  <ul class="nav flex-column">
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" aria-current="page" href="#">Home</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#projects">Projects</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="aboutus">About Us</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#services">Services</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="automation">Automation</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#expertise">Expertise</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="#workwithus">Contact</a>
-    </li>
-    <li class="nav-item">
-      <a class="nav-link link-secondary ps-0" href="blog">Blog</a>
-    </li>
-  </ul>
-</div>
-<div class="col-12 col-sm-6 col-xl-3 border-end p-4 p-sm-5">
-  <h3 class="h6 mb-3">Australia</h3>
-  <div class="h-100 bg-cover mx-auto"
-    style="background-image: url(assets/Map-Melb.webp); min-height: 180px; max-width:280px; border-radius: 10px; -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%);">
-  </div>
-</div>
-<div class="col-12 col-sm-6 col-xl-3 p-4 p-sm-5">
-  <h3 class="h6 mb-3">Malaysia</h3>
-  <div class="h-100 bg-cover mx-auto"
-    style="background-image: url(assets/Map-KL.webp); min-height: 180px; max-width:280px; border-radius: 10px; -webkit-mask-image: linear-gradient(to top, rgba(0, 0, 0, 0), rgba(0, 0, 0, 1) 20%);">
-  </div>
-</div>
-</div>
-</div>
-
-<div class="mobile-show container text-center py-3 small">
-  <a class="nav-link text-decoration-underline" href="#workwithus">
-    Work with us
-  </a>
-</div>
-<div class="container text-center py-3 small">© 2024 BIM Farers. All rights reserved.
-</div>
-</footer>
-
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
-<script>
-  // Script to remove preloader when fully loaded
-  $(window).on("load", function(){
-    $(".loader-wrapper").fadeOut("slow");
-    $("body").removeClass("preloadbody");
-  });
-</script>
-
-<script src="js/bootstrap.bundle.min.js"></script>
-<script src="js/aos.js"></script>
- <script>
- AOS.init({
-   duration: 800, // values from 0 to 3000, with step 50ms
- });
- </script>
-
- <script>
-  let scrollpos = window.scrollY
-  const header = document.querySelector(".navbar")
-  const header_height = header.offsetHeight
-
-  const add_class_on_scroll = () => header.classList.add("scrolled", "shadow-sm")
-  const remove_class_on_scroll = () => header.classList.remove("scrolled", "shadow-sm")
-
-  window.addEventListener('scroll', function() {
-    scrollpos = window.scrollY;
-
-    if (scrollpos >= header_height) { add_class_on_scroll() }
-    else { remove_class_on_scroll() }
-
-    console.log(scrollpos)
-  })
-</script>
-
-<script src="js/carousel.min.js"></script>
-
-<script>
-  // Script to run animated number or decimal counter 
-  // REF : https://stackoverflow.com/a/31706360
-
-  function countUp() {
-    var num = $(this).text();
-    var decimal = 0;
-    if (num.indexOf(".") > 0) { // if number is Decimal
-      decimal = num.toString().split(".")[1].length;
-    }
-    $(this)
-      .prop("Counter", 0.0)
-      .animate(
-        {
-          Counter: $(this).text()
-        },
-        {
-          duration: 2000,
-          easing: "swing",
-          step: function (now) {
-            $(this).text(parseFloat(now).toFixed(decimal));
+    function countUp() {
+      var num = $(this).text();
+      var decimal = 0;
+      if (num.indexOf(".") > 0) { // if number is Decimal
+        decimal = num.toString().split(".")[1].length;
+      }
+      $(this)
+        .prop("Counter", 0.0)
+        .animate(
+          {
+            Counter: $(this).text()
+          },
+          {
+            duration: 2000,
+            easing: "swing",
+            step: function (now) {
+              $(this).text(parseFloat(now).toFixed(decimal));
+            }
           }
-        }
-      );
-  }
+        );
+    }
 
-  var a = 0;
-  $(window).scroll(function() {
+    var a = 0;
+    $(window).scroll(function () {
 
-  var oTop = $('#counter').offset().top - window.innerHeight;
-  if (a == 0 && $(window).scrollTop() > oTop) {
-    $(".js-num").each(countUp);
-    a = 1;
-  }
+      var oTop = $('#counter').offset().top - window.innerHeight;
+      if (a == 0 && $(window).scrollTop() > oTop) {
+        $(".js-num").each(countUp);
+        a = 1;
+      }
 
-});
+    });
 
-</script>
+  </script>
 
-  </body>
+</body>
+
 </html>
