@@ -5,7 +5,7 @@
    * Licensed under MIT (https://github.com/twbs/bootstrap/blob/main/LICENSE)
    */
 :root {
-  --bs-blue: #1717e5;
+  --bs-blue: #861e10;
   --bs-indigo: #6610f2;
   --bs-purple: #6f42c1;
   --bs-pink: #d63384;
@@ -69,7 +69,8 @@
   --bs-link-color: #151515;
   --bs-link-hover-color: #111111;
   --bs-code-color: #d63384;
-  --bs-highlight-bg: #fff3cd; }
+  --bs-highlight-bg: #fff3cd;
+  }
 
 *,
 *::before,
