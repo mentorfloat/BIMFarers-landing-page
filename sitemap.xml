@@ -2,20 +2,20 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
     <url>
         <loc>https://bimfarers.com.au/</loc>
-        <lastmod>2024-05-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-06-17</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>1.0</priority>
     </url>
     <url>
         <loc>https://bimfarers.com.au/automation</loc>
-        <lastmod>2024-05-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <lastmod>2025-06-17</lastmod>
+        <changefreq>monthly</changefreq>
         <priority>0.2</priority>
     </url>
     <url>
         <loc>https://bimfarers.com.au/aboutus</loc>
         <lastmod>2024-05-15</lastmod>
-        <changefreq>weekly</changefreq>
+        <changefreq>monthly</changefreq>
         <priority>0.8</priority>
     </url>
     <url>
