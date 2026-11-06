@@ -2,7 +2,8 @@
   {
     "file": "index.html",
     "title": "BIM Farers | Engineering, BIM & Revit Automation",
-    "description": "Engineering, BIM modelling, shop drawings and Revit automation for building services contractors. A connected team in Melbourne and Kuala Lumpur."
+    "description": "Engineering, BIM modelling, shop drawings and Revit automation for building services contractors. A connected team in Melbourne and Kuala Lumpur.",
+    "jsonld": "index.jsonld.html"
   },
   {
     "file": "aboutus.html",

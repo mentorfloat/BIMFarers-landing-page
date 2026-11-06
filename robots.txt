@@ -1,3 +1,3 @@
 User-agent: *
 Allow: /
-Sitemap: https://bimfarers.com.au/sitemap.xml
+Sitemap: https://www.bimfarers.com.au/sitemap.xml

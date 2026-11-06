@@ -7,8 +7,9 @@ This iteration lives on `design/modern-minimal-refresh`. **Do not merge or deplo
 it until the design, content and QA review are complete.** The production branch
 is `main` (the repository does not use `master`).
 
-![Desktop design preview](docs/previews/desktop.jpg)
+![Desktop design preview](docs/previews/second-pass-desktop.jpg)
 
+- [Second pass: technical design layer, fixes and proposals](docs/SECOND-PASS.md)
 - [Design audit and recommendations](docs/DESIGN-REVIEW.md)
 - [QA handoff for Claude or another reviewer](docs/QA-HANDOFF.md)
 - [Current performance evidence](docs/OPTION-A-PERFORMANCE.md)
@@ -34,7 +35,7 @@ generated root HTML files alongside the source:
 | Area | Source |
 | --- | --- |
 | Page content | `content/*.html` |
-| Titles, descriptions and navigation state | `content/pages.json` |
+| Titles, descriptions, navigation state and page JSON-LD | `content/pages.json`, `content/*.schema.html`, `content/*.jsonld.html` |
 | Shared document, header and footer | `templates/*.html` |
 | Layout, colours, responsive rules and motion | `css/site.css` |
 | Mobile menu / optional section motion | `js/navigation.js` (inlined) / `js/site.js` |
