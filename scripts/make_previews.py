@@ -45,7 +45,7 @@ def palette_html():
             '.g{display:grid;grid-template-columns:repeat(6,1fr);gap:20px}.c{height:120px;'
             'border:1px solid var(--line)}.s b{display:block;margin-top:14px;font-weight:500}'
             '.s code{font:500 12px var(--mono)}.s small{display:block;color:var(--muted);'
-            'font-size:12px;margin-top:6px}</style><p class="eyebrow">BIM Farers / brand palette'
+            'font-size:12px;margin-top:6px}</style><p class="eyebrow">BIM Farers brand palette'
             f'</p><div class="g" style="margin-top:24px">{cells}</div>')
 
 
@@ -61,7 +61,7 @@ def social_html():
             '.model img{width:100%;mix-blend-mode:multiply}</style>'
             '<div class="copy"><span class="brand"><img src="/assets/brand.svg" width="34" '
             'height="38" alt="">BIM Farers</span><h1>Better coordinated.<br><span>Ready to build.'
-            '</span></h1><p class="eyebrow">Engineering / BIM / Revit automation<br>'
+            '</span></h1><p class="eyebrow">Engineering · BIM · Revit automation<br>'
             'Melbourne + Kuala Lumpur</p></div><div class="model">'
             '<img src="/assets/optimized/hero-model-1280.webp" alt=""></div>')
 
@@ -89,7 +89,7 @@ async def main():
             await page.evaluate("""async () => {
                 for (let y = 0; y < document.body.scrollHeight; y += 700) {
                     scrollTo(0, y); await new Promise(r => setTimeout(r, 50)); }
-                await Promise.all([...document.images].map(i => i.decode().catch(() => {})));
+                await Promise.all([...document.images].map(i => Promise.race([i.decode().catch(() => {}), new Promise(r => setTimeout(r, 5000))])));
                 scrollTo(0, 0); await document.fonts.ready; }""")
             await page.wait_for_timeout(200)
             save(await page.screenshot(full_page=full), OUT / name, out_width)

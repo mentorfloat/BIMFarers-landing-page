@@ -41,7 +41,8 @@ async def check():
                     for (let y = 0; y < document.body.scrollHeight; y += 700) {
                         window.scrollTo(0, y); await new Promise(r => setTimeout(r, 60));
                     }
-                    await Promise.all([...document.images].map(i => i.decode().catch(() => {})));
+                    // Cap the wait: an image that never loads (e.g. hidden + lazy) is reported below, not hung on.
+                    await Promise.all([...document.images].map(i => Promise.race([i.decode().catch(() => {}), new Promise(r => setTimeout(r, 5000))])));
                     window.scrollTo(0, 0);
                 }""")
                 broken = await page.locator('img').evaluate_all('(images) => images.filter(i => !i.complete || !i.naturalWidth).map(i => i.src)')

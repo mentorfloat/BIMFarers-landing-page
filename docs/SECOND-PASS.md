@@ -23,10 +23,10 @@ existing `assets/brand.svg` exactly.
 
 | Token | Colour | Canva source | Used for |
 | --- | --- | --- | --- |
-| `--navy` | `#060d4e` | Proposal background | Expertise and enquiry sections, primary buttons, pill tag, crop marks |
+| `--navy` | `#060d4e` | Proposal background | Expertise and enquiry sections, primary buttons |
 | `--ink` | `#212529` | Logo sail and wordmark | Text |
 | `--azure` | `#0a8ae6` | Logo wave | Labels on navy, focus ring; `#0868b8` for small text on light backgrounds |
-| `--crimson` | `#f40042` | Logo sail, letterhead icons | One signature accent: the first pipeline node |
+| `--crimson` | `#f40042` | Logo sail, letterhead icons | One signature accent: the first pipeline dot |
 | Periwinkle | `#6767bd` | Proposal ribbon lines | `assets/waves.svg`, behind the enquiry band |
 | `--paper` | `#f5f6f9` | Cool white, as in the logo artboards | Page background |
 
@@ -51,20 +51,19 @@ existing `assets/brand.svg` exactly.
 
 | Change | Why | Cost |
 | --- | --- | --- |
-| Monospace labels for eyebrows, captions, specs and metadata | Reads as a specification sheet, as on AI and developer-tool sites | None. Uses the system monospace font (SF Mono, Consolas, Menlo) |
-| Drafting-grid backdrop behind the hero, faded with a mask | Suggests drafting paper and model space without competing with the render | CSS gradient only |
-| CAD crop marks around the hero model (tablet and desktop) | Frames the model like a drawing viewport | One pseudo-element |
+| Monospace labels for eyebrows, captions, specs and metadata, without section numbers or slashes | Reads as a specification sheet, as on AI and developer-tool sites | None. Uses the system monospace font (SF Mono, Consolas, Menlo) |
+| Soft white glow that spreads out from the hero image | Lifts the model off the page without extra graphics | One CSS gradient |
 | Translucent, blurred sticky header | Modern product-site convention; content stays visible underneath | Solid fallback where `backdrop-filter` is unsupported |
-| Numbered delivery pipeline replaces the discipline strip | Shows the service as a sequence of stages | Same DOM size |
+| Delivery pipeline with a dot per stage replaces the discipline strip | Shows the service as a sequence of stages | Same DOM size |
 | Large footer wordmark sized with container units | Strong brand sign-off; fits the content column at every width | Uses the already-embedded wordmark font |
 | Minimum text size raised to 11px | Several 8–10px captions were hard to read on phones | — |
 
 ### Pages
 
-- **Home:** the hero has a "BIMF Tools" pill linking to the plugins, and a "See our
-  work" link next to the main button. The intro now names the disciplines, since
-  the old eyebrow was replaced. The model caption is a figure label. A new
-  **03 / Software** section shows BIMF Tools as product cards (available, in
+- **Home:** the hero has a "See our work" link next to the main button, and the
+  intro names the disciplines. "What we do" has a team portrait with an
+  overlapping close-up beside the four services, echoing the hero overlap. A new
+  **Software** section shows BIMF Tools as product cards (available, in
   development, custom). The software stack is shown as tags. The enquiry block
   lists what to include, and its email opens with a short project-brief template.
 - **Revit tools:** this was a thin page with a link to the App Store. It is now a product
@@ -75,10 +74,30 @@ existing `assets/brand.svg` exactly.
   Developer badge and the three-step process. The product copy comes from the
   owner's July 2024 homepage (`a36a36c`). The feature list matches what the
   plugin screenshot shows.
-- **Practice:** a facts row (founded, studios, disciplines, developer status)
-  with a visible "Credentials" label above the badges. All facts are taken from
-  existing site copy.
+- **Practice:** a facts row under the photo: founded, offices, and the
+  credential badges (moved up from further down the page). All facts are taken
+  from existing site copy.
 - **Journal:** removed an inline style. All pages pick up the new labels and footer.
+
+### Owner review, round 3
+
+Changes made from the owner's marked-up screenshots:
+
+- **Numbers and slashes.** No section numbers or slashes in labels ("01 / What we do"
+  is now "What we do"). Numbers remain only where they identify something: the
+  BIMF Tools products and process steps on the Revit tools page, and journal dates.
+- **Hero.** Removed the BIMF Tools pill, the CAD crop marks, the drafting grid
+  and the "Fig. 01 / Revit model" label. A soft white glow now spreads out from
+  the model image.
+- **Pipeline.** Each stage has a dot instead of a number (crimson first, then navy).
+- **What we do.** Added the unused *Career* photo as a portrait, with the
+  *Discuss2* close-up overlapping it, beside the four services (which lost their
+  01–04 numbers). Both are placeholders until new photography is chosen. They
+  are re-encoded at 15–28 KB and lazy-loaded.
+- **Practice.** "Studios" is now "Offices". Disciplines and Developer were removed and the
+  credential badges moved up into the facts row. The photo caption was removed.
+- **Test fix.** `browser_check.py` now caps its wait for each image at 5 seconds. A
+  hidden lazy image would otherwise hang the suite instead of failing clearly.
 
 ### Fixes found in review
 

@@ -83,11 +83,11 @@
 
   <main id="main" tabindex="-1">
     <div class="wrap">
-  <header class="page-intro"><p class="eyebrow">Revit tools / BIMF Tools</p><h1>Built by modellers.<br>For the way you work.</h1><p class="intro-description">Revit plugins and custom automation for everyday building services tasks. Put the repetitive work in the background and keep your attention on the model.</p></header>
+  <header class="page-intro"><p class="eyebrow">Revit tools</p><h1>Built by modellers.<br>For the way you work.</h1><p class="intro-description">Revit plugins and custom automation for everyday building services tasks. Put the repetitive work in the background and keep your attention on the model.</p></header>
 
   <section class="section product-feature" id="pipe-penetrations" aria-labelledby="pipe-title">
     <div class="product-copy">
-      <div class="product-meta"><img src="/assets/Icon-PluginPipePeno.webp" width="150" height="150" alt=""><p class="eyebrow">BIMF Tools / 01</p><span class="status is-live">Available</span></div>
+      <div class="product-meta"><img src="/assets/Icon-PluginPipePeno.webp" width="150" height="150" alt=""><p class="eyebrow">BIMF Tools 01</p><span class="status is-live">Available</span></div>
       <h2 id="pipe-title">Pipe penetrations,<br>placed in seconds.</h2>
       <p class="muted">Combined penetration plans and services penetration elevations are becoming the norm in Australia. BIMF Tools inserts penetration elements for you, so your team stops spending hours preparing them by hand.</p>
       <ul class="spec-list">
@@ -100,18 +100,18 @@
     </div>
     <div class="product-visual">
       <figure class="app-window">
-        <figcaption class="app-bar"><span class="app-dots" aria-hidden="true"></span>Revit / BIMF Tools / Insert slab penetrations</figcaption>
+        <figcaption class="app-bar"><span class="app-dots" aria-hidden="true"></span>BIMF Tools – Insert slab penetrations</figcaption>
         <picture>
           <source type="image/avif" srcset="/assets/optimized/plugin-pipe-960.avif">
           <img src="/assets/optimized/plugin-pipe-960.webp" width="960" height="612" fetchpriority="high" alt="The BIMF Tools ribbon in Revit with the Insert Slab Penetrations dialog open beside a model of hydraulic pipework">
         </picture>
       </figure>
-      <figure class="line-drawing"><img src="/assets/optimized/penetration-line-400.webp" width="400" height="550" loading="lazy" decoding="async" alt="Line drawing of a slab penetration element with a puddle flange"><figcaption>Fig. 02 / Penetration element</figcaption></figure>
+      <figure class="line-drawing"><img src="/assets/optimized/penetration-line-400.webp" width="400" height="550" loading="lazy" decoding="async" alt="Line drawing of a slab penetration element with a puddle flange"><figcaption>Penetration element</figcaption></figure>
     </div>
   </section>
 
   <section class="section product-next" id="ceiling-heights" aria-labelledby="ceiling-title">
-    <div class="product-meta"><img src="/assets/Icon-PluginCeiling.webp" width="150" height="150" loading="lazy" decoding="async" alt=""><p class="eyebrow">BIMF Tools / 02</p><span class="status">In development</span></div>
+    <div class="product-meta"><img src="/assets/Icon-PluginCeiling.webp" width="150" height="150" loading="lazy" decoding="async" alt=""><p class="eyebrow">BIMF Tools 02</p><span class="status">In development</span></div>
     <div><h2 id="ceiling-title">Ceiling height checks.</h2><p class="muted">Ceiling height clashes are common on large commercial projects. This tool analyses ceiling elements against the building services, detects services modelled below the ceiling and highlights them in the current Revit view.</p></div>
   </section>
 </div>
@@ -120,14 +120,14 @@
   <div class="wrap">
     <div class="dev-grid">
       <div>
-        <p class="eyebrow">03 / Custom development</p>
+        <p class="eyebrow">Custom development</p>
         <h2 id="custom-title">A workflow problem?<br>Let’s write the tool.</h2>
         <p>The Revit API gives developers direct access to almost every function in Revit. We combine it with our construction experience to automate the modelling tasks your team repeats every day, and reduce the errors that come with them.</p>
         <p>As an Autodesk Authorised Developer and member of the Autodesk Developer Network, we have access to Autodesk’s full developer support.</p>
         <img class="adn-badge" src="/assets/Logo-AutodeskADN.svg" width="268" height="68" loading="lazy" alt="Autodesk Authorised Developer">
       </div>
       <figure class="code-panel">
-        <figcaption><span>FindPipesThroughSlab.cs</span><span>Revit API / C#</span></figcaption>
+        <figcaption><span>FindPipesThroughSlab.cs</span><span>C#</span></figcaption>
 <pre><code><span class="c">// Collect the pipes that pass through a slab</span>
 <span class="k">var</span> box = slab.get_BoundingBox(<span class="k">null</span>);
 <span class="k">var</span> outline = <span class="k">new</span> <span class="t">Outline</span>(box.Min, box.Max);
@@ -139,9 +139,9 @@
       </figure>
     </div>
     <div class="engagement-grid dev-steps">
-      <div class="engagement"><p class="eyebrow">01 / Understand</p><h3>Start with the task.</h3><p>Show us the workflow, the model and the manual steps you want to improve.</p></div>
-      <div class="engagement"><p class="eyebrow">02 / Define</p><h3>Make the scope clear.</h3><p>Agree on inputs, expected outputs and the Revit environment before development.</p></div>
-      <div class="engagement"><p class="eyebrow">03 / Develop</p><h3>Build around your team.</h3><p>Work through the tool together using examples from your actual workflow.</p></div>
+      <div class="engagement"><p class="eyebrow"><span class="num">01</span>Understand</p><h3>Start with the task.</h3><p>Show us the workflow, the model and the manual steps you want to improve.</p></div>
+      <div class="engagement"><p class="eyebrow"><span class="num">02</span>Define</p><h3>Make the scope clear.</h3><p>Agree on inputs, expected outputs and the Revit environment before development.</p></div>
+      <div class="engagement"><p class="eyebrow"><span class="num">03</span>Develop</p><h3>Build around your team.</h3><p>Work through the tool together using examples from your actual workflow.</p></div>
     </div>
   </div>
 </section>
