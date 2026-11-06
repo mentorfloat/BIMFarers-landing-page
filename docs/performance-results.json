@@ -1,0 +1,184 @@
+{
+  "conditions": "Cold Chromium; 150ms RTT, 1.6Mbps down, 4x CPU; external baseline responses mirrored in memory and not CDP-throttled.",
+  "runs": [
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "sample": 1,
+      "lcp": 9756,
+      "cls": 0.0003677211675965073,
+      "ready": 13633.199999999953,
+      "fcp": 4240,
+      "localResourceBytes": 2331919,
+      "requests": 18
+    },
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "sample": 2,
+      "lcp": 9608,
+      "cls": 0.0003677211675965073,
+      "ready": 13531.5,
+      "fcp": 4088,
+      "localResourceBytes": 2331919,
+      "requests": 18
+    },
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "sample": 3,
+      "lcp": 9604,
+      "cls": 0.0003677211675965073,
+      "ready": 13470,
+      "fcp": 4028,
+      "localResourceBytes": 2331919,
+      "requests": 18
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "sample": 1,
+      "lcp": 1032,
+      "cls": 0,
+      "ready": 1004.0999999998603,
+      "fcp": 1032,
+      "localResourceBytes": 397308,
+      "requests": 12
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "sample": 2,
+      "lcp": 924,
+      "cls": 0,
+      "ready": 866.7000000001863,
+      "fcp": 924,
+      "localResourceBytes": 397308,
+      "requests": 12
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "sample": 3,
+      "lcp": 876,
+      "cls": 0,
+      "ready": 827.3999999999069,
+      "fcp": 876,
+      "localResourceBytes": 397308,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "sample": 1,
+      "lcp": 14000,
+      "cls": 0,
+      "ready": 13845.699999999953,
+      "fcp": 4116,
+      "localResourceBytes": 2369323,
+      "requests": 19
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "sample": 2,
+      "lcp": 13928,
+      "cls": 0,
+      "ready": 13752.5,
+      "fcp": 3972,
+      "localResourceBytes": 2369323,
+      "requests": 19
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "sample": 3,
+      "lcp": 14000,
+      "cls": 0,
+      "ready": 13841.699999999953,
+      "fcp": 4096,
+      "localResourceBytes": 2369323,
+      "requests": 19
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "sample": 1,
+      "lcp": 980,
+      "cls": 0,
+      "ready": 831.5999999998603,
+      "fcp": 904,
+      "localResourceBytes": 431914,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "sample": 2,
+      "lcp": 1012,
+      "cls": 0,
+      "ready": 926.1000000000931,
+      "fcp": 952,
+      "localResourceBytes": 431914,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "sample": 3,
+      "lcp": 1064,
+      "cls": 0,
+      "ready": 952.5999999998603,
+      "fcp": 960,
+      "localResourceBytes": 431914,
+      "requests": 12
+    }
+  ],
+  "medians": [
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "fcp": 4088,
+      "lcp": 9608,
+      "cls": 0.0,
+      "ready": 13531.5,
+      "localResourceBytes": 2331919,
+      "requests": 18
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "fcp": 924,
+      "lcp": 924,
+      "cls": 0,
+      "ready": 866.7,
+      "localResourceBytes": 397308,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "fcp": 4096,
+      "lcp": 14000,
+      "cls": 0,
+      "ready": 13841.7,
+      "localResourceBytes": 2369323,
+      "requests": 19
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "fcp": 952,
+      "lcp": 1012,
+      "cls": 0,
+      "ready": 926.1,
+      "localResourceBytes": 431914,
+      "requests": 12
+    }
+  ],
+  "externalMirrors": {
+    "https://fonts.googleapis.com/css2?family=Work+Sans:ital,wght@0,100..900;1,100..900&display=swap": 4059,
+    "https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js": 89795,
+    "https://fonts.gstatic.com/s/worksans/v24/QGY_z_wNahGAdqQ43RhVcIgYT2Xz5u32K5fQNig.ttf": 115376
+  }
+}

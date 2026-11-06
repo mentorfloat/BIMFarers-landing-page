@@ -1,0 +1,63 @@
+[
+  {
+    "file": "index.html",
+    "title": "BIM Farers | Engineering, BIM & Revit Automation",
+    "description": "Engineering, BIM modelling, shop drawings and Revit automation for building services contractors. A connected team in Melbourne and Kuala Lumpur."
+  },
+  {
+    "file": "aboutus.html",
+    "title": "The Practice | BIM Farers",
+    "description": "Meet the engineers, BIM modellers and software developers behind BIM Farers. Based in Melbourne, Australia and Kuala Lumpur, Malaysia.",
+    "nav": "aboutus"
+  },
+  {
+    "file": "automation.html",
+    "title": "Revit Tools & Custom Automation | BIM Farers",
+    "description": "Explore BIM Farers Revit tools on the Autodesk App Store and discuss custom automation for your modelling and drafting workflows.",
+    "nav": "automation"
+  },
+  {
+    "file": "blog.html",
+    "title": "Journal | BIM Farers",
+    "description": "Perspectives from practice on building services engineering, BIM coordination and construction technology.",
+    "nav": "blog"
+  },
+  {
+    "file": "privacypolicy-plugin.html",
+    "title": "BIMF Tools Privacy Policy | BIM Farers",
+    "description": "Privacy policy for the BIMF Tools Autodesk Revit plugin. Effective 11 February 2024."
+  },
+  {
+    "file": "404.html",
+    "title": "Page Not Found | BIM Farers",
+    "description": "The page you are looking for could not be found.",
+    "noindex": true
+  },
+  {
+    "file": "paymentsuccess.html",
+    "title": "Payment Return | BIM Farers",
+    "description": "Information about your BIM Farers plugin purchase and where to find your transaction details.",
+    "noindex": true
+  },
+  {
+    "file": "1-building-information-modelling.html",
+    "title": "Building Information Modelling (BIM): The Future for Tradies | BIM Farers",
+    "description": "Discover how Building Information Modelling (BIM) is revolutionizing the construction industry and what it means for tradies through this blog post.",
+    "schema": "1-building-information-modelling.schema.html",
+    "nav": "blog"
+  },
+  {
+    "file": "2-built-to-rent.html",
+    "title": "Navigating The Built-to-rent Landscape: A Contractor's Perspective | BIM Farers",
+    "description": "This blog post introduces the trending Built-to-rent building model and outlines the design considerations for builders and contractors.",
+    "schema": "2-built-to-rent.schema.html",
+    "nav": "blog"
+  },
+  {
+    "file": "3-construction-recap-2023.html",
+    "title": "2023 Recap of the Australian Construction Industry: Embracing Digital Transformation | BIM Farers",
+    "description": "This blog post recaps the construction industry of 2023 and explores the importance of construction digitalisation.",
+    "schema": "3-construction-recap-2023.schema.html",
+    "nav": "blog"
+  }
+]
