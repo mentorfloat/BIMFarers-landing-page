@@ -7,14 +7,16 @@ This iteration lives on `design/modern-minimal-refresh`. **Do not merge or deplo
 it until the design, content and QA review are complete.** The production branch
 is `main` (the repository does not use `master`).
 
-![Desktop design preview](docs/previews/second-pass-desktop.jpg)
+![Desktop design preview](docs/previews/desktop.jpg)
 
 - [Second pass: technical design layer, fixes and proposals](docs/SECOND-PASS.md)
 - [Design audit and recommendations](docs/DESIGN-REVIEW.md)
 - [QA handoff for Claude or another reviewer](docs/QA-HANDOFF.md)
 - [Current performance evidence](docs/OPTION-A-PERFORMANCE.md)
 - [Original full-site performance comparison](docs/PERFORMANCE.md)
-- [Mobile preview](docs/previews/mobile.png)
+- Previews: [mobile](docs/previews/mobile.png), [full home](docs/previews/home-full.jpg),
+  [Revit tools](docs/previews/tools-full.jpg), [practice](docs/previews/practice-full.jpg),
+  [journal](docs/previews/journal-full.jpg), [brand palette](docs/previews/palette.png)
 
 ## Edit and preview
 
@@ -37,7 +39,9 @@ generated root HTML files alongside the source:
 | Page content | `content/*.html` |
 | Titles, descriptions, navigation state and page JSON-LD | `content/pages.json`, `content/*.schema.html`, `content/*.jsonld.html` |
 | Shared document, header and footer | `templates/*.html` |
-| Layout, colours, responsive rules and motion | `css/site.css` |
+| Layout, colours (Canva brand tokens), responsive rules and motion | `css/site.css` |
+| Proposal ribbon graphic | `scripts/make_waves.py` → `assets/waves.svg` |
+| Review previews and social card | `scripts/make_previews.py` (optional, needs Playwright) |
 | Mobile menu / optional section motion | `js/navigation.js` (inlined) / `js/site.js` |
 | Optimised images | `assets/optimized/` |
 
