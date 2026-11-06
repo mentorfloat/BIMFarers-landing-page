@@ -3,6 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="/css/site.css">
   <meta name="description" content="Meet the engineers, BIM modellers and software developers behind BIM Farers. Based in Melbourne, Australia and Kuala Lumpur, Malaysia.">
   <meta name="theme-color" content="#f5f5f0">
 
@@ -17,9 +18,10 @@
   <meta property="og:image" content="https://www.bimfarers.com.au/assets/RevitRender2.webp">
   <link rel="icon" type="image/png" sizes="32x32" href="/favicon/favicon-32x32.png">
   <link rel="apple-touch-icon" href="/favicon/apple-touch-icon.png">
-  <link rel="preload" href="/fonts/inter-v12-latin-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-web-300.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-web-500.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="/fonts/inter-web-700.woff2" as="font" type="font/woff2" crossorigin>
 
-  <link rel="stylesheet" href="/css/site.css">
   <script src="/js/site.js" defer></script>
 
 </head>
@@ -39,6 +41,43 @@
     </nav>
   </div>
 </header>
+<script>/* Inline at the end of the header to avoid a menu layout shift on first paint. */
+(() => {
+  'use strict';
+  const header = document.querySelector('.site-header');
+  const toggle = document.querySelector('.menu-toggle');
+  const navigation = document.querySelector('#navigation');
+  if (header && toggle && navigation) {
+    const compact = window.matchMedia('(max-width: 760px)');
+    const close = () => {
+      header.classList.remove('menu-open');
+      toggle.setAttribute('aria-expanded', 'false');
+    };
+    toggle.hidden = false;
+    header.classList.add('menu-enhanced');
+    toggle.addEventListener('click', () => {
+      const open = toggle.getAttribute('aria-expanded') !== 'true';
+      header.classList.toggle('menu-open', open);
+      toggle.setAttribute('aria-expanded', String(open));
+    });
+    navigation.addEventListener('click', event => {
+      if (event.target.closest('a') && compact.matches) close();
+    });
+    header.addEventListener('keydown', event => {
+      if (event.key === 'Escape' && header.classList.contains('menu-open')) {
+        close();
+        toggle.focus();
+      }
+    });
+    compact.addEventListener('change', () => {
+      const focusWasInMenu = navigation.contains(document.activeElement);
+      close();
+      if (compact.matches && focusWasInMenu) toggle.focus();
+    });
+  }
+
+})();
+</script>
 
   <main id="main" tabindex="-1">
     <div class="wrap">

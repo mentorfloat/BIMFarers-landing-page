@@ -28,11 +28,12 @@ def build():
             'canonical': 'https://www.bimfarers.com.au/' + (page['file'][:-5] if page['file'] != 'index.html' else ''),
             'robots': '<meta name="robots" content="noindex">' if page.get('noindex') else '',
             'header': nav, 'footer': footer,
+            'navigation_script': (ROOT / 'js/navigation.js').read_text(),
             'content': (ROOT / 'content' / page['file']).read_text(),
             'schema': schema,
             'og_type': 'article' if schema else 'website',
             'og_image': og_image,
-            'preload': '<link rel="preload" as="image" href="/assets/optimized/model-1280.webp" imagesrcset="/assets/optimized/model-640.webp 640w, /assets/optimized/model-1280.webp 1280w" imagesizes="(max-width: 760px) 100vw, 70vw" fetchpriority="high">' if page['file'] == 'index.html' else '',
+            'preload': '<link rel="preload" as="image" type="image/avif" href="/assets/optimized/hero-model-1280.avif" imagesrcset="/assets/optimized/hero-model-640.avif 640w, /assets/optimized/hero-model-1280.avif 1280w" imagesizes="(max-width: 760px) calc(100vw - 48px), 56vw" fetchpriority="high">' if page['file'] == 'index.html' else '',
         }
         output = shell
         for key, value in values.items():

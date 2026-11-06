@@ -5,6 +5,12 @@ Baseline: `mentorfloat/BIMFarers-landing-page`, `main`, commit
 Working branch: `design/modern-minimal-refresh`. This is a reviewable first
 redesign, with no production deployment or merge.
 
+The owner subsequently approved hero option A, adding a smaller team photograph
+to the first screen and restoring the original font-weight hierarchy and Work
+Sans wordmark. See [responsive verification](RESPONSIVE-QA.md) and the
+[updated performance comparison](OPTION-A-PERFORMANCE.md). The discussion below
+records the initial audit; its single-font-weight choice has been superseded.
+
 ## What the existing site gets right
 
 The strongest material is already here: a real Revit model, six recognisable

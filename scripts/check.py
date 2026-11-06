@@ -26,6 +26,10 @@ class Page(HTMLParser):
             self.headings.append(tag)
         if tag in ['img', 'script', 'iframe'] and a.get('src'):
             self.assets.append(a['src'])
+        if tag in ['img', 'source', 'link']:
+            for item in (a.get('srcset') or a.get('imagesrcset') or '').split(','):
+                if item.strip():
+                    self.assets.append(item.split()[0])
         if tag == 'img':
             assert 'alt' in a, f'Missing alt: {a}'
             assert 'width' in a and 'height' in a, f'Missing image dimensions: {a}'
@@ -54,11 +58,17 @@ def check():
         for script in re.findall(r'<script type="application/ld\+json">(.*?)</script>', source, re.S):
             json.loads(script)
     assert (ROOT / 'css/site.css').stat().st_size <= 20_000, 'CSS over 20 KB budget'
-    assert (ROOT / 'js/site.js').stat().st_size <= 3_000, 'JS over 3 KB budget'
+    assert sum((ROOT / 'js' / name).stat().st_size for name in ['site.js','navigation.js']) <= 3_000, 'JS over 3 KB budget'
     assert (ROOT / 'index.html').stat().st_size <= 30_000, 'Homepage HTML over 30 KB budget'
     assert (ROOT / 'assets/optimized/model-1280.webp').stat().st_size <= 60_000
     assert (ROOT / 'assets/optimized/model-640.webp').stat().st_size <= 30_000
+    assert sum((ROOT / 'fonts' / f'inter-web-{weight}.woff2').stat().st_size for weight in [300,500,700]) <= 24_000
+    assert (ROOT / 'fonts/work-sans-brand.woff2').stat().st_size <= 2_000
+    for name, budget in [('hero-model-640.avif',12_000),('hero-model-1280.avif',30_000),('hero-team-320.avif',8_000),('hero-team-640.avif',21_000)]:
+        assert (ROOT / 'assets/optimized' / name).stat().st_size <= budget, f'{name} over budget'
     for url in re.findall(r'url\([\'\"]?([^\)\'\"]+)', (ROOT / 'css/site.css').read_text()):
+        if url.startswith('data:font/woff2;base64,'):
+            continue
         assert (ROOT / 'css' / url).is_file(), f'Missing CSS asset {url}'
     print(f'PASS: {len(parsed)} pages, assets, links, anchors, schema and load budgets.')
 

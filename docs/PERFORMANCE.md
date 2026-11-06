@@ -1,5 +1,9 @@
 # Performance evidence — first redesign
 
+For the subsequently approved overlapping team-photo hero, see
+[the option A comparison](OPTION-A-PERFORMANCE.md). This document preserves the
+initial full-site baseline comparison.
+
 The homepage comparison shows a substantial improvement in this controlled
 environment, with no observed loading regression. These results are not field
 Core Web Vitals and do not guarantee a timing on every device or connection.

@@ -1,0 +1,922 @@
+[
+  {
+    "width": 320,
+    "height": 568,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 24,
+      "top": 202.28125,
+      "right": 296,
+      "bottom": 343.203125,
+      "width": 272,
+      "height": 140.921875
+    },
+    "people": {
+      "left": 24,
+      "top": 352.125,
+      "right": 139.109375,
+      "bottom": 412.703125,
+      "width": 115.109375,
+      "height": 60.578125
+    },
+    "button": {
+      "left": 24,
+      "top": 516.203125,
+      "right": 231.109375,
+      "bottom": 561.390625,
+      "width": 207.109375,
+      "height": 45.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-640.avif",
+    "peopleSource": "optimized/hero-team-320.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 360,
+    "height": 640,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 24,
+      "top": 229.5625,
+      "right": 336,
+      "bottom": 391.21875,
+      "width": 312,
+      "height": 161.65625
+    },
+    "people": {
+      "left": 24,
+      "top": 403.453125,
+      "right": 157.515625,
+      "bottom": 473.71875,
+      "width": 133.515625,
+      "height": 70.265625
+    },
+    "button": {
+      "left": 24,
+      "top": 559.21875,
+      "right": 231.109375,
+      "bottom": 604.40625,
+      "width": 207.109375,
+      "height": 45.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-640.avif",
+    "peopleSource": "optimized/hero-team-320.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 375,
+    "height": 667,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 24,
+      "top": 229.5625,
+      "right": 351,
+      "bottom": 398.984375,
+      "width": 327,
+      "height": 169.421875
+    },
+    "people": {
+      "left": 24,
+      "top": 407.59375,
+      "right": 164.40625,
+      "bottom": 481.484375,
+      "width": 140.40625,
+      "height": 73.890625
+    },
+    "button": {
+      "left": 24,
+      "top": 566.984375,
+      "right": 231.109375,
+      "bottom": 612.171875,
+      "width": 207.109375,
+      "height": 45.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-640.avif",
+    "peopleSource": "optimized/hero-team-320.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 390,
+    "height": 844,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 24,
+      "top": 278.859375,
+      "right": 366,
+      "bottom": 456.046875,
+      "width": 342,
+      "height": 177.1875
+    },
+    "people": {
+      "left": 24,
+      "top": 452.234375,
+      "right": 178.15625,
+      "bottom": 535.546875,
+      "width": 154.15625,
+      "height": 83.3125
+    },
+    "button": {
+      "left": 24,
+      "top": 670.109375,
+      "right": 235.109375,
+      "bottom": 719.296875,
+      "width": 211.109375,
+      "height": 49.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-640.avif",
+    "peopleSource": "optimized/hero-team-320.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 414,
+    "height": 896,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 24,
+      "top": 286.828125,
+      "right": 390,
+      "bottom": 476.453125,
+      "width": 366,
+      "height": 189.625
+    },
+    "people": {
+      "left": 24,
+      "top": 466.40625,
+      "right": 189.671875,
+      "bottom": 555.953125,
+      "width": 165.671875,
+      "height": 89.546875
+    },
+    "button": {
+      "left": 24,
+      "top": 668.828125,
+      "right": 235.109375,
+      "bottom": 718.015625,
+      "width": 211.109375,
+      "height": 49.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-640.avif",
+    "peopleSource": "optimized/hero-team-320.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 480,
+    "height": 800,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 24,
+      "top": 308.625,
+      "right": 456,
+      "bottom": 532.453125,
+      "width": 432,
+      "height": 223.828125
+    },
+    "people": {
+      "left": 24,
+      "top": 505.28125,
+      "right": 221.359375,
+      "bottom": 611.953125,
+      "width": 197.359375,
+      "height": 106.671875
+    },
+    "button": {
+      "left": 24,
+      "top": 724.828125,
+      "right": 235.109375,
+      "bottom": 774.015625,
+      "width": 211.109375,
+      "height": 49.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-640.avif",
+    "peopleSource": "optimized/hero-team-320.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 600,
+    "height": 960,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 25.203125,
+      "top": 315.234375,
+      "right": 574.796875,
+      "bottom": 599.984375,
+      "width": 549.59375,
+      "height": 284.75
+    },
+    "people": {
+      "left": 25.203125,
+      "top": 542.296875,
+      "right": 279,
+      "bottom": 679.484375,
+      "width": 253.796875,
+      "height": 137.1875
+    },
+    "button": {
+      "left": 25.203125,
+      "top": 792.359375,
+      "right": 236.3125,
+      "bottom": 841.546875,
+      "width": 211.109375,
+      "height": 49.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-640.avif",
+    "peopleSource": "optimized/hero-team-320.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 760,
+    "height": 900,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 31.921875,
+      "top": 315.234375,
+      "right": 728.078125,
+      "bottom": 675.921875,
+      "width": 696.15625,
+      "height": 360.6875
+    },
+    "people": {
+      "left": 31.921875,
+      "top": 580.21875,
+      "right": 356.0625,
+      "bottom": 755.421875,
+      "width": 324.140625,
+      "height": 175.203125
+    },
+    "button": {
+      "left": 31.921875,
+      "top": 868.296875,
+      "right": 243.03125,
+      "bottom": 917.484375,
+      "width": 211.109375,
+      "height": 49.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 761,
+    "height": 900,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 361.765625,
+      "top": 286.28125,
+      "right": 729.015625,
+      "bottom": 518.703125,
+      "width": 367.25,
+      "height": 232.421875
+    },
+    "people": {
+      "left": 368.765625,
+      "top": 497.671875,
+      "right": 523.6875,
+      "bottom": 579.203125,
+      "width": 154.921875,
+      "height": 81.53125
+    },
+    "button": {
+      "left": 31.96875,
+      "top": 564.5625,
+      "right": 247.078125,
+      "bottom": 617.75,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 768,
+    "height": 1024,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 364.90625,
+      "top": 347.15625,
+      "right": 735.734375,
+      "bottom": 581.84375,
+      "width": 370.828125,
+      "height": 234.6875
+    },
+    "people": {
+      "left": 371.90625,
+      "top": 559.9375,
+      "right": 528.484375,
+      "bottom": 642.34375,
+      "width": 156.578125,
+      "height": 82.40625
+    },
+    "button": {
+      "left": 32.25,
+      "top": 627.109375,
+      "right": 247.359375,
+      "bottom": 680.296875,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 820,
+    "height": 1180,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 388.25,
+      "top": 416.765625,
+      "right": 785.546875,
+      "bottom": 668.21875,
+      "width": 397.296875,
+      "height": 251.453125
+    },
+    "people": {
+      "left": 395.25,
+      "top": 639.90625,
+      "right": 564,
+      "bottom": 728.71875,
+      "width": 168.75,
+      "height": 88.8125
+    },
+    "button": {
+      "left": 34.4375,
+      "top": 709.015625,
+      "right": 249.546875,
+      "bottom": 762.203125,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 900,
+    "height": 900,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 424.1875,
+      "top": 263.890625,
+      "right": 862.1875,
+      "bottom": 541.09375,
+      "width": 438,
+      "height": 277.203125
+    },
+    "people": {
+      "left": 431.1875,
+      "top": 502.9375,
+      "right": 618.65625,
+      "bottom": 601.59375,
+      "width": 187.46875,
+      "height": 98.65625
+    },
+    "button": {
+      "left": 37.796875,
+      "top": 575,
+      "right": 252.90625,
+      "bottom": 628.1875,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 768,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 479.890625,
+      "top": 183.421875,
+      "right": 980.984375,
+      "bottom": 500.5625,
+      "width": 501.09375,
+      "height": 317.140625
+    },
+    "people": {
+      "left": 486.890625,
+      "top": 450.03125,
+      "right": 688.359375,
+      "bottom": 556.0625,
+      "width": 201.46875,
+      "height": 106.03125
+    },
+    "button": {
+      "left": 43.015625,
+      "top": 499.75,
+      "right": 258.125,
+      "bottom": 552.9375,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1100,
+    "height": 800,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 514.015625,
+      "top": 187.1875,
+      "right": 1053.796875,
+      "bottom": 528.8125,
+      "width": 539.78125,
+      "height": 341.625
+    },
+    "people": {
+      "left": 521.015625,
+      "top": 469.53125,
+      "right": 739.109375,
+      "bottom": 584.3125,
+      "width": 218.09375,
+      "height": 114.78125
+    },
+    "button": {
+      "left": 46.203125,
+      "top": 521.46875,
+      "right": 261.3125,
+      "bottom": 574.65625,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1280,
+    "height": 720,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 583.5,
+      "top": 114.609375,
+      "right": 1226.234375,
+      "bottom": 521.390625,
+      "width": 642.734375,
+      "height": 406.78125
+    },
+    "people": {
+      "left": 532.65625,
+      "top": 438.8125,
+      "right": 795.03125,
+      "bottom": 576.890625,
+      "width": 262.375,
+      "height": 138.078125
+    },
+    "button": {
+      "left": 53.765625,
+      "top": 494.953125,
+      "right": 268.875,
+      "bottom": 548.140625,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1366,
+    "height": 768,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 622.703125,
+      "top": 124.9375,
+      "right": 1308.609375,
+      "bottom": 559.046875,
+      "width": 685.90625,
+      "height": 434.109375
+    },
+    "people": {
+      "left": 567.984375,
+      "top": 466.6875,
+      "right": 848.921875,
+      "bottom": 614.546875,
+      "width": 280.9375,
+      "height": 147.859375
+    },
+    "button": {
+      "left": 57.375,
+      "top": 525.390625,
+      "right": 272.484375,
+      "bottom": 578.578125,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1440,
+    "height": 900,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 656.4375,
+      "top": 173.671875,
+      "right": 1379.515625,
+      "bottom": 631.3125,
+      "width": 723.078125,
+      "height": 457.640625
+    },
+    "people": {
+      "left": 598.375,
+      "top": 531.75,
+      "right": 902.515625,
+      "bottom": 691.8125,
+      "width": 304.140625,
+      "height": 160.0625
+    },
+    "button": {
+      "left": 60.484375,
+      "top": 620.4375,
+      "right": 275.59375,
+      "bottom": 673.625,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1600,
+    "height": 900,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 729.375,
+      "top": 148.25,
+      "right": 1532.78125,
+      "bottom": 656.734375,
+      "width": 803.40625,
+      "height": 508.484375
+    },
+    "people": {
+      "left": 664.078125,
+      "top": 538.5625,
+      "right": 1003.5625,
+      "bottom": 717.234375,
+      "width": 339.484375,
+      "height": 178.671875
+    },
+    "button": {
+      "left": 67.203125,
+      "top": 631.8125,
+      "right": 282.3125,
+      "bottom": 685,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1920,
+    "height": 1080,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 880.96875,
+      "top": 214.328125,
+      "right": 1759.984375,
+      "bottom": 770.65625,
+      "width": 879.015625,
+      "height": 556.328125
+    },
+    "people": {
+      "left": 808.859375,
+      "top": 634.96875,
+      "right": 1181.625,
+      "bottom": 831.15625,
+      "width": 372.765625,
+      "height": 196.1875
+    },
+    "button": {
+      "left": 160,
+      "top": 721.8125,
+      "right": 375.109375,
+      "bottom": 775,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 2560,
+    "height": 1440,
+    "firstScreenRequired": true,
+    "overflow": false,
+    "model": {
+      "left": 1200.96875,
+      "top": 394.328125,
+      "right": 2079.984375,
+      "bottom": 950.65625,
+      "width": 879.015625,
+      "height": 556.328125
+    },
+    "people": {
+      "left": 1128.859375,
+      "top": 814.96875,
+      "right": 1501.625,
+      "bottom": 1011.15625,
+      "width": 372.765625,
+      "height": 196.1875
+    },
+    "button": {
+      "left": 480,
+      "top": 901.8125,
+      "right": 695.109375,
+      "bottom": 955,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 667,
+    "height": 375,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 28.015625,
+      "top": 202.28125,
+      "right": 638.984375,
+      "bottom": 518.84375,
+      "width": 610.96875,
+      "height": 316.5625
+    },
+    "people": {
+      "left": 28.015625,
+      "top": 445.703125,
+      "right": 299.046875,
+      "bottom": 588.34375,
+      "width": 271.03125,
+      "height": 142.640625
+    },
+    "button": {
+      "left": 28.015625,
+      "top": 673.84375,
+      "right": 235.125,
+      "bottom": 719.03125,
+      "width": 207.109375,
+      "height": 45.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 844,
+    "height": 390,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 399.046875,
+      "top": 109,
+      "right": 808.546875,
+      "bottom": 368.171875,
+      "width": 409.5,
+      "height": 259.171875
+    },
+    "people": {
+      "left": 406.046875,
+      "top": 338.375,
+      "right": 568.125,
+      "bottom": 423.671875,
+      "width": 162.078125,
+      "height": 85.296875
+    },
+    "button": {
+      "left": 35.453125,
+      "top": 387.1875,
+      "right": 250.5625,
+      "bottom": 440.375,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  },
+  {
+    "width": 1024,
+    "height": 600,
+    "firstScreenRequired": false,
+    "overflow": false,
+    "model": {
+      "left": 479.890625,
+      "top": 109,
+      "right": 980.984375,
+      "bottom": 426.140625,
+      "width": 501.09375,
+      "height": 317.140625
+    },
+    "people": {
+      "left": 486.890625,
+      "top": 375.609375,
+      "right": 688.359375,
+      "bottom": 481.640625,
+      "width": 201.46875,
+      "height": 106.03125
+    },
+    "button": {
+      "left": 43.015625,
+      "top": 425.328125,
+      "right": 258.125,
+      "bottom": 478.515625,
+      "width": 215.109375,
+      "height": 53.1875
+    },
+    "overlaps": [],
+    "loaded": true,
+    "modelSource": "optimized/hero-model-1280.avif",
+    "peopleSource": "optimized/hero-team-640.avif",
+    "fonts": [
+      "Inter",
+      "Inter",
+      "Inter",
+      "Work Sans Brand"
+    ]
+  }
+]

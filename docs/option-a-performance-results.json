@@ -1,0 +1,180 @@
+{
+  "conditions": "Cold Chromium; 150ms RTT, 1.6Mbps down, 4x CPU; external baseline responses mirrored in memory and not CDP-throttled.",
+  "runs": [
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "sample": 1,
+      "lcp": 980,
+      "cls": 0.03802086482956185,
+      "ready": 977.0999999996275,
+      "fcp": 900,
+      "localResourceBytes": 397420,
+      "requests": 12
+    },
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "sample": 2,
+      "lcp": 984,
+      "cls": 0.03802086482956185,
+      "ready": 983.8000000002794,
+      "fcp": 872,
+      "localResourceBytes": 397420,
+      "requests": 12
+    },
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "sample": 3,
+      "lcp": 740,
+      "cls": 0.03802086482956185,
+      "ready": 738,
+      "fcp": 684,
+      "localResourceBytes": 397420,
+      "requests": 12
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "sample": 1,
+      "lcp": 812,
+      "cls": 0,
+      "ready": 751.5,
+      "fcp": 812,
+      "localResourceBytes": 398774,
+      "requests": 15
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "sample": 2,
+      "lcp": 784,
+      "cls": 0,
+      "ready": 740.5,
+      "fcp": 784,
+      "localResourceBytes": 398774,
+      "requests": 15
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "sample": 3,
+      "lcp": 808,
+      "cls": 0,
+      "ready": 762.6000000000931,
+      "fcp": 808,
+      "localResourceBytes": 398774,
+      "requests": 15
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "sample": 1,
+      "lcp": 928,
+      "cls": 0.0036982912190755206,
+      "ready": 871,
+      "fcp": 844,
+      "localResourceBytes": 431914,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "sample": 2,
+      "lcp": 876,
+      "cls": 0.0036982912190755206,
+      "ready": 835.1000000000931,
+      "fcp": 784,
+      "localResourceBytes": 431914,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "sample": 3,
+      "lcp": 904,
+      "cls": 0.0036982912190755206,
+      "ready": 838.6999999997206,
+      "fcp": 780,
+      "localResourceBytes": 431914,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "sample": 1,
+      "lcp": 860,
+      "cls": 0,
+      "ready": 808.8999999999069,
+      "fcp": 848,
+      "localResourceBytes": 427572,
+      "requests": 15
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "sample": 2,
+      "lcp": 812,
+      "cls": 0,
+      "ready": 745.7000000001863,
+      "fcp": 800,
+      "localResourceBytes": 427572,
+      "requests": 15
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "sample": 3,
+      "lcp": 968,
+      "cls": 0.0016120883367091048,
+      "ready": 945.1999999997206,
+      "fcp": 892,
+      "localResourceBytes": 427572,
+      "requests": 15
+    }
+  ],
+  "medians": [
+    {
+      "viewport": "mobile",
+      "version": "before",
+      "fcp": 872,
+      "lcp": 980,
+      "cls": 0.038,
+      "ready": 977.1,
+      "localResourceBytes": 397420,
+      "requests": 12
+    },
+    {
+      "viewport": "mobile",
+      "version": "after",
+      "fcp": 808,
+      "lcp": 808,
+      "cls": 0,
+      "ready": 751.5,
+      "localResourceBytes": 398774,
+      "requests": 15
+    },
+    {
+      "viewport": "desktop",
+      "version": "before",
+      "fcp": 784,
+      "lcp": 904,
+      "cls": 0.004,
+      "ready": 838.7,
+      "localResourceBytes": 431914,
+      "requests": 12
+    },
+    {
+      "viewport": "desktop",
+      "version": "after",
+      "fcp": 848,
+      "lcp": 860,
+      "cls": 0,
+      "ready": 808.9,
+      "localResourceBytes": 427572,
+      "requests": 15
+    }
+  ],
+  "externalMirrors": {}
+}

@@ -4,6 +4,15 @@ Review branch: `design/modern-minimal-refresh`.
 Compare against baseline `7cf7a55dacc0eb5e379b5edb786f3596a1ee9d03` on `main`.
 Do not merge or deploy while reviewing. Production is `main`, not `master`.
 
+## Approved hero update
+
+The owner selected option A: a smaller real team photograph overlaps the model
+on desktop and sits beneath it on mobile. See [responsive verification](RESPONSIVE-QA.md)
+and [updated performance evidence](OPTION-A-PERFORMANCE.md). Shared typography now
+uses three small original Inter subsets (300/500/700) and the Work Sans wordmark.
+`js/navigation.js` is inserted inline after the header to avoid a late menu collapse;
+the remaining deferred `js/site.js` only adds optional section movement.
+
 ## Scope and architecture
 
 - Ten redesigned root HTML pages. Existing filenames and extensionless routes
@@ -12,7 +21,7 @@ Do not merge or deploy while reviewing. Production is `main`, not `master`.
 - `content/` + `templates/` are source. `scripts/build.py` emits checked-in root
   HTML with no external Python dependencies. Edit source, rebuild, commit both.
 - `css/site.css` and `js/site.js` are the only active local stylesheet/script.
-  One existing Inter WOFF2 is self-hosted. Image derivatives are committed;
+  Inter WOFF2 subsets are self-hosted, and the tiny wordmark font is embedded in CSS. Image derivatives are committed;
   originals remain. No image processing is needed to build or deploy.
 - Desktop/mobile navigation uses normal links. The menu becomes collapsible
   only when JS successfully initialises; without JS all links remain visible.
