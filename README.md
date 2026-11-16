@@ -27,8 +27,8 @@ python scripts/check.py
 python scripts/preview.py --port 8000
 ```
 
-Open `http://127.0.0.1:8000`. The preview server supports both `.html` and the
-existing extensionless URLs. A plain static server also serves the `.html` links.
+Open `http://127.0.0.1:8000`. Internal links use the canonical extensionless
+addresses (`/aboutus`), which GitHub Pages and the preview server both serve.
 The site assumes hosting at the root of its domain, as configured by `CNAME`.
 
 Edit these source files, then run `python scripts/build.py` and commit the
@@ -47,8 +47,10 @@ generated root HTML files alongside the source:
 
 The generator only shares the HTML shell. It uses Python's standard library and
 emits ready-to-serve HTML; Python is not needed by the deployed site. Original
-images and unused legacy assets remain available for comparison. The old
-`map.html` remains accessible but is no longer embedded by the site.
+images remain in `assets/` as sources. `map.html` is the Google Maps locator
+embedded on the Practice page; it loads only when a visitor scrolls near it. The
+deploy workflow publishes site files only, not `content/`, `templates/`,
+`scripts/` or `docs/`.
 
 The approved hero is option A: the team photo overlaps the model on desktop and
 tucks below it on phones. Typography restores the original light/bold Inter

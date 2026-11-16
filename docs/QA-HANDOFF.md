@@ -29,8 +29,9 @@ the remaining deferred `js/site.js` only adds optional section movement.
 - The privacy policy and published article text remain original. All original
   article paragraphs were compared against the baseline and retained. Articles
   keep their 2023 dates and BlogPosting schema.
-- `map.html` and old unreferenced CSS/JS/media are retained for a later cleanup.
-  They are outside the redesigned page load path and static-page check list.
+- `map.html` is embedded on the Practice page again (loaded on approach). The
+  unreferenced legacy CSS/JS was removed in the final review; see
+  [SECOND-PASS.md](SECOND-PASS.md) for the current state.
 
 ## Reproduce checks
 

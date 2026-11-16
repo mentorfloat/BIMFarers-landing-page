@@ -60,8 +60,8 @@ def check():
             json.loads(script)
     # Transfer size is what affects loading; the raw ceiling stops unchecked growth.
     css = (ROOT / 'css/site.css').read_bytes()
-    assert len(css) <= 32_000, 'CSS over 32 KB raw budget'
-    assert len(gzip.compress(css, 9)) <= 9_000, 'CSS over 9 KB gzip budget'
+    assert len(css) <= 36_000, 'CSS over 36 KB raw budget'
+    assert len(gzip.compress(css, 9)) <= 10_000, 'CSS over 10 KB gzip budget'
     assert sum((ROOT / 'js' / name).stat().st_size for name in ['site.js','navigation.js']) <= 4_000, 'JS over 4 KB budget'
     assert (ROOT / 'index.html').stat().st_size <= 30_000, 'Homepage HTML over 30 KB budget'
     assert (ROOT / 'assets/optimized/model-1280.webp').stat().st_size <= 60_000

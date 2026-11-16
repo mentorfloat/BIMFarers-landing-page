@@ -145,7 +145,52 @@ third-party requests) all pass in Chromium. New text colours meet WCAG AA
 (muted 5.2:1, code comments 5.3:1, status green 5.8:1). Safari, iOS and Firefox still
 need checking on real devices.
 
+## Final review (round 6)
+
+### Map
+- The Google Maps locator (`map.html`, unchanged apart from its title, language
+  and a `noindex` tag) is embedded on the Practice page again. The first redesign
+  had replaced it with two static pictures.
+- It loads when the visitor scrolls within 600 px of it. The browser's built-in
+  `loading="lazy"` was tested first and loaded Google's code on every page open.
+- Tested with Google reachable: the locator loads, lists both offices and
+  responds to clicks. Google refused the map tiles on the test address
+  (`RefererNotAllowedMapError`), which shows the API key is restricted to the
+  production domain. The tiles therefore need confirming on the real site.
+
+### SEO and best practice
+- Internal links use the canonical extensionless addresses, matching the
+  canonical tags and sitemap.
+- The Journal index no longer skips from `h1` to `h3`.
+- Articles have 1200×630 JPG share images and shorter titles (the brand is in
+  `og:site_name`).
+- The web manifest is linked, with correct name, colours and icon paths.
+- The deploy workflow publishes site files only. `content/`, `templates/`,
+  `scripts/` and `docs/` were previously public, including duplicate page
+  fragments. The step uses `tar` and was tested locally: 11 pages, no missing files.
+
+### Efficiency
+- Team portraits 316 KB → 84 KB; Journal cards 384 KB → 67 KB; project tiles
+  gain AVIF versions (312 KB → 183 KB).
+- The bold font is preloaded only on the homepage, the one page that uses it.
+- Removed 2.9 MB of unreferenced Bootstrap, AOS, carousel and `theme.css`.
+- Budgets in `scripts/check.py`: CSS ≤10 KB gzip (36 KB raw), JS ≤4 KB.
+- Measured in Chromium with gzip: no layout shift on any main page.
+
+### Layout
+- One shared grid: three equal columns with a 32 px gutter. Section labels sit in
+  column one; headings, service lists, tags, the contact block, footer columns,
+  page intros and the Tools page visuals all start at column two.
+- Neighbouring sections on the same background share one gap (about 1.3× the
+  section padding) instead of two stacked paddings.
+- Portrait tablets no longer force the hero to full screen height.
+
 ## Please verify before release
+
+0. **Map on the real domain.** Open the Practice page on the live or preview site
+   and confirm the map tiles appear. A preview subdomain must be added to the
+   API key's allowed websites in Google Cloud Console, or the map will show
+   Google's error message there.
 
 1. **Ceiling height tool status.** It is shown as *In development*. The last published
    status was "Coming soon" in July 2024. Change it to *Available* or remove it if
@@ -205,6 +250,3 @@ These need business input, new assets or a decision on third-party services.
 - **Interactive model.** A small glTF viewer of a cleaned-up services model on
   the tools page would be the most "AI-firm" feature. It should load only on
   click, so the homepage budget is unaffected.
-- **Cleanup.** Remove the legacy Bootstrap/AOS bundles, `css/theme.css` (295 KB)
-  and `map.html` once this direction is approved. They are not loaded but make
-  the repository harder to maintain.
