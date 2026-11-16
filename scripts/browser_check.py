@@ -88,7 +88,7 @@ async def check():
         page = await context.new_page()
         await page.goto(origin)
         await page.locator('#projects').scroll_into_view_if_needed()
-        assert await page.locator('.is-entering').count() == 0
+        assert await page.locator('.will-enter').count() == 0
         assert await page.evaluate('document.getAnimations().length') == 0
         await context.close()
         await browser.close()

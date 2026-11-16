@@ -91,7 +91,7 @@ async def main():
                     scrollTo(0, y); await new Promise(r => setTimeout(r, 50)); }
                 await Promise.all([...document.images].map(i => Promise.race([i.decode().catch(() => {}), new Promise(r => setTimeout(r, 5000))])));
                 scrollTo(0, 0); await document.fonts.ready; }""")
-            await page.wait_for_timeout(200)
+            await page.wait_for_timeout(900)
             save(await page.screenshot(full_page=full), OUT / name, out_width)
             await page.close()
         for name, html, size, target in [

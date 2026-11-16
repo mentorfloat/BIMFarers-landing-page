@@ -99,6 +99,25 @@ Changes made from the owner's marked-up screenshots:
 - **Test fix.** `browser_check.py` now caps its wait for each image at 5 seconds. A
   hidden lazy image would otherwise hang the suite instead of failing clearly.
 
+### Motion (round 4)
+
+Short, quiet movement only: 120–450 ms, one easing curve, 14 px of travel at most.
+No loaders, parallax, scroll hijacking or looping animation.
+
+- **Page load.** Headline, intro and buttons rise in sequence (60 ms apart), the
+  team photo follows, and the model settles from a 3.5% zoom. The model image
+  never fades, so it still paints immediately.
+- **Scroll.** Section headings, cards and photos fade up as they enter, with rows
+  staggered left to right. `js/site.js` only hides elements that start below the
+  screen, so nothing is hidden without JavaScript and nothing flashes.
+- **Page changes.** Cross-document view transitions give a 180 ms cross-fade
+  while the header stays in place (browsers without support navigate normally).
+- **Scroll-linked.** The header rule appears once the page moves, and articles
+  show a thin reading-progress line. Both are CSS only, where supported.
+- **Feedback.** Buttons press in slightly, product cards lift, journal titles
+  change colour, and the phone menu fades in.
+- **Reduced motion.** All of it is off when the visitor's device asks for reduced motion.
+
 ### Fixes found in review
 
 - **Canonical host mismatch.** Canonical tags used `www.bimfarers.com.au`, but the
