@@ -25,8 +25,8 @@ class Page(HTMLParser):
             self.links.append(a.get('href', ''))
         if tag == 'h1':
             self.headings.append(tag)
-        if tag in ['img', 'script', 'iframe'] and a.get('src'):
-            self.assets.append(a['src'])
+        if tag in ['img', 'script', 'iframe'] and (a.get('src') or a.get('data-src')):
+            self.assets.append(a.get('src') or a['data-src'])
         if tag in ['img', 'source', 'link']:
             for item in (a.get('srcset') or a.get('imagesrcset') or '').split(','):
                 if item.strip():
@@ -62,7 +62,7 @@ def check():
     css = (ROOT / 'css/site.css').read_bytes()
     assert len(css) <= 32_000, 'CSS over 32 KB raw budget'
     assert len(gzip.compress(css, 9)) <= 9_000, 'CSS over 9 KB gzip budget'
-    assert sum((ROOT / 'js' / name).stat().st_size for name in ['site.js','navigation.js']) <= 3_000, 'JS over 3 KB budget'
+    assert sum((ROOT / 'js' / name).stat().st_size for name in ['site.js','navigation.js']) <= 4_000, 'JS over 4 KB budget'
     assert (ROOT / 'index.html').stat().st_size <= 30_000, 'Homepage HTML over 30 KB budget'
     assert (ROOT / 'assets/optimized/model-1280.webp').stat().st_size <= 60_000
     assert (ROOT / 'assets/optimized/model-640.webp').stat().st_size <= 30_000

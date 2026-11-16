@@ -35,11 +35,15 @@ jobs:
         uses: actions/checkout@v4
       - name: Setup Pages
         uses: actions/configure-pages@v5
+      - name: Assemble site
+        # Publish only what the website serves: no source partials, build scripts or review docs.
+        run: |
+          mkdir _site
+          tar -c --exclude=./_site --exclude='./.git*' --exclude=./content --exclude=./templates --exclude=./scripts --exclude=./docs --exclude=./README.md . | tar -x -C _site
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload entire repository
-          path: '.'
+          path: '_site'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v4

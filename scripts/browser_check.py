@@ -30,7 +30,16 @@ async def check():
             errors, failures, external = [], [], []
             page.on('pageerror', lambda error: errors.append(str(error)))
             page.on('response', lambda response: failures.append(response.url) if response.status >= 400 else None)
-            page.on('request', lambda request: external.append(request.url) if not request.url.startswith(origin) else None)
+            # The Practice page embeds the Google Maps locator (map.html); only that frame may go off-site.
+            def off_site(request):
+                frame = request.frame
+                while frame:
+                    if frame.url.startswith(f'{origin}/map.html'):
+                        return
+                    frame = frame.parent_frame
+                if not request.url.startswith(origin):
+                    external.append(request.url)
+            page.on('request', off_site)
             for spec in pages:
                 await page.goto(f'{origin}/{spec["file"]}', wait_until='networkidle')
                 assert await page.locator('h1').count() == 1, spec['file']

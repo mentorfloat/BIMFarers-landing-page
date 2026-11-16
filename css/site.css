@@ -109,12 +109,12 @@ address{font-style:normal}
 .journal-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:32px;min-width:0}
 .journal-card{display:block;border-top:1px solid var(--ink);padding-top:20px}
 .journal-card img{width:100%;aspect-ratio:16/10;object-fit:cover;margin-bottom:24px}
-.journal-card h3{font-size:26px;line-height:1.2;margin-block:20px}
+.journal-card :is(h2,h3){font-size:26px;line-height:1.2;letter-spacing:-.04em;margin-block:20px}
 .journal-card p{font-size:13px;color:var(--muted)}
 .journal-card .eyebrow{display:flex;flex-wrap:wrap;justify-content:space-between;gap:12px}
 .journal-card .read{display:inline-block;margin-top:28px;border-bottom:1px solid currentColor;padding-bottom:4px;font-size:12px}
-.journal-card h3{transition:color 180ms}
-.journal-card:hover h3{color:var(--azure-ink)}
+.journal-card :is(h2,h3){transition:color 180ms}
+.journal-card:hover :is(h2,h3){color:var(--azure-ink)}
 .journal-card:hover .read{text-decoration:underline}
 .contact-section{position:relative;isolation:isolate;background:var(--navy);color:#fff;padding-block:clamp(60px,7vw,112px)}
 /* Proposal ribbon (scripts/make_waves.py), dimmed behind the copy column. */
@@ -153,9 +153,11 @@ address{font-style:normal}
 .credentials{display:flex;flex-wrap:wrap;gap:14px 28px;align-items:center}
 .credentials img{object-fit:contain;width:auto;height:44px;max-width:172px}
 .location-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px}
-.location{display:grid;grid-template-columns:1fr 1fr;gap:24px;border-top:1px solid var(--line);padding-top:24px}
-.location img{width:100%;aspect-ratio:1;object-fit:cover}
-.location h3{margin-bottom:20px;font-size:26px}
+/* Google Maps locator (map.html): loads only when scrolled near. */
+.map-frame{margin-bottom:40px;background:#e8eaed;border:1px solid var(--line)}
+.map-frame iframe{display:block;width:100%;height:clamp(440px,42vw,600px);border:0}
+.location{border-top:1px solid var(--ink);padding-top:20px}
+.location h3{margin-bottom:16px;font-size:26px}
 .location p,.location address{font-size:13px;color:var(--muted)}
 .location .text-link{font-size:12px;gap:16px;margin-top:24px}
 .tools-note{font-size:12px;color:var(--muted);margin-top:20px}
@@ -266,7 +268,7 @@ address{font-style:normal}
 @media(max-width:1000px){
 .header-inner{gap:20px}.navigation{gap:18px}.navigation .nav-contact{margin-left:0}.brand{font-size:20px}
 .footer-grid{grid-template-columns:1.5fr 1fr;gap:40px}.expertise-bottom>div{flex-direction:column}
-.location{grid-template-columns:1fr}
+
 }
 @media(max-width:760px){
 .header-inner{min-height:68px;flex-wrap:wrap;gap:0;padding-block:10px}.brand{font-size:23px}
@@ -298,12 +300,12 @@ address{font-style:normal}
 .engagement-grid{grid-template-columns:1fr;gap:32px}.engagement h3{margin-block:20px 16px}
 .practice-preview{grid-template-columns:1fr;gap:32px}.practice-preview>img{aspect-ratio:4/3}
 .journal-grid{grid-template-columns:minmax(0,1fr);gap:40px}.journal-header{align-items:start;flex-direction:column;gap:24px}
-.journal-card h3{max-width:600px;font-size:28px}.journal-card img{aspect-ratio:16/9}
+.journal-card :is(h2,h3){max-width:600px;font-size:28px}.journal-card img{aspect-ratio:16/9}
 .contact-grid{grid-template-columns:1fr;gap:24px}
 .footer-grid{grid-template-columns:1fr 1fr;gap:40px 24px}.footer-grid>div:first-child{grid-column:1/-1}
 .page-intro{padding-block:48px}.page-intro .intro-description{margin-left:0;font-size:16px}
 .people-grid{grid-template-columns:repeat(2,1fr);gap:32px 20px}.person h3{font-size:16px}
-.full-figure img{aspect-ratio:4/3}.location-grid{gap:32px}.credentials{gap:12px 22px}.credentials img{height:38px}
+.full-figure img{aspect-ratio:4/3}.location-grid{gap:24px 16px}.map-frame{margin-bottom:32px}.map-frame iframe{height:540px}.location h3{font-size:20px;margin-bottom:12px}.credentials{gap:12px 22px}.credentials img{height:38px}
 .simple-page{padding-block:64px}
 .article-header{padding-top:48px}.article-body{font-size:16px}.article-body h2{font-size:28px}
 }

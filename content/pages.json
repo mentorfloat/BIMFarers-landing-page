@@ -42,23 +42,26 @@
   },
   {
     "file": "1-building-information-modelling.html",
-    "title": "Building Information Modelling (BIM): The Future for Tradies | BIM Farers",
+    "title": "Building Information Modelling (BIM): The Future for Tradies",
     "description": "Discover how Building Information Modelling (BIM) is revolutionizing the construction industry and what it means for tradies through this blog post.",
     "schema": "1-building-information-modelling.schema.html",
-    "nav": "blog"
+    "nav": "blog",
+    "social": "journal-bim.jpg"
   },
   {
     "file": "2-built-to-rent.html",
-    "title": "Navigating The Built-to-rent Landscape: A Contractor's Perspective | BIM Farers",
+    "title": "Navigating The Built-to-rent Landscape: A Contractor's Perspective",
     "description": "This blog post introduces the trending Built-to-rent building model and outlines the design considerations for builders and contractors.",
     "schema": "2-built-to-rent.schema.html",
-    "nav": "blog"
+    "nav": "blog",
+    "social": "journal-btr.jpg"
   },
   {
     "file": "3-construction-recap-2023.html",
-    "title": "2023 Recap of the Australian Construction Industry: Embracing Digital Transformation | BIM Farers",
+    "title": "2023 Recap of the Australian Construction Industry: Embracing Digital Transformation",
     "description": "This blog post recaps the construction industry of 2023 and explores the importance of construction digitalisation.",
     "schema": "3-construction-recap-2023.schema.html",
-    "nav": "blog"
+    "nav": "blog",
+    "social": "journal-recap.jpg"
   }
 ]

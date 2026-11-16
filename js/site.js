@@ -1,8 +1,20 @@
 /* Progressive enhancement only: all links and content work without JavaScript. */
 (() => {
   'use strict';
+  const canObserve = 'IntersectionObserver' in window;
+  // Embedded frames (the Google map) load only when the visitor scrolls near them.
+  for (const frame of document.querySelectorAll('iframe[data-src]')) {
+    const load = () => { frame.src = frame.dataset.src; };
+    if (!canObserve) { load(); continue; }
+    const near = new IntersectionObserver(entries => {
+      if (!entries.some(entry => entry.isIntersecting)) return;
+      load();
+      near.disconnect();
+    }, { rootMargin: '600px' });
+    near.observe(frame);
+  }
   const reduce = matchMedia('(prefers-reduced-motion: reduce)');
-  if (!('IntersectionObserver' in window) || reduce.matches) return;
+  if (!canObserve || reduce.matches) return;
   const show = element => element.classList.add('is-in');
   const observer = new IntersectionObserver(entries => {
     for (const entry of entries) {

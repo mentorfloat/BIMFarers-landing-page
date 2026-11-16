@@ -25,6 +25,9 @@ def build():
             data = json.loads(re.search(r'<script[^>]*>(.*?)</script>', schema, re.S).group(1))
             og_image = data['image']['url']
             og_image_size = ''
+        if page.get('social'):
+            og_image = 'https://www.bimfarers.com.au/assets/social/' + page['social']
+            og_image_size = '<meta property="og:image:width" content="1200">\n  <meta property="og:image:height" content="630">'
         jsonld = (ROOT / 'content' / page['jsonld']).read_text() if page.get('jsonld') else ''
         canonical = 'https://www.bimfarers.com.au/' + (page['file'][:-5] if page['file'] != 'index.html' else '')
         indexable = not page.get('noindex')
@@ -41,6 +44,8 @@ def build():
             'schema': schema + jsonld,
             'og_type': 'article' if schema else 'website',
             'og_image': og_image,
+            # Inter 700 is only used by the homepage headline.
+            'font_bold': '<link rel="preload" href="/fonts/inter-web-700.woff2" as="font" type="font/woff2" crossorigin>' if page['file'] == 'index.html' else '',
             'preload': '<link rel="preload" as="image" type="image/avif" href="/assets/optimized/hero-model-1280.avif" imagesrcset="/assets/optimized/hero-model-640.avif 640w, /assets/optimized/hero-model-1280.avif 1280w" imagesizes="(max-width: 760px) calc(100vw - 48px), 56vw" fetchpriority="high">' if page['file'] == 'index.html' else '',
         }
         output = shell
