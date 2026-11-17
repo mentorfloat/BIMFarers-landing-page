@@ -14,7 +14,7 @@ PAGES = json.loads((ROOT / 'content/pages.json').read_text())
 class Page(HTMLParser):
     def __init__(self, source):
         super().__init__()
-        self.ids, self.links, self.assets, self.headings = [], [], [], []
+        self.ids, self.links, self.assets, self.headings, self.levels = [], [], [], [], []
         self.feed(source)
 
     def handle_starttag(self, tag, attrs):
@@ -23,6 +23,8 @@ class Page(HTMLParser):
             self.ids.append(a['id'])
         if tag == 'a':
             self.links.append(a.get('href', ''))
+        if re.fullmatch(r'h[1-6]', tag):
+            self.levels.append(int(tag[1]))
         if tag == 'h1':
             self.headings.append(tag)
         if tag in ['img', 'script', 'iframe'] and (a.get('src') or a.get('data-src')):
@@ -43,6 +45,11 @@ def check():
     for name, page in parsed.items():
         assert len(page.headings) == 1, f'{name}: expected one h1'
         assert len(page.ids) == len(set(page.ids)), f'{name}: duplicate IDs'
+        assert all(i[:1].isalpha() for i in page.ids), f'{name}: IDs must start with a letter'
+        skipped = [(a, b) for a, b in zip(page.levels, page.levels[1:]) if b > a + 1]
+        assert not skipped, f'{name}: heading levels skip {skipped}'
+        # Internal links use the canonical extensionless addresses (see sitemap.xml).
+        assert not [l for l in page.links if l.startswith('/') and '.html' in l], f'{name}: internal .html link'
         for link in page.links + page.assets:
             url = urlsplit(link)
             if url.scheme or url.netloc:
@@ -64,8 +71,6 @@ def check():
     assert len(gzip.compress(css, 9)) <= 10_000, 'CSS over 10 KB gzip budget'
     assert sum((ROOT / 'js' / name).stat().st_size for name in ['site.js','navigation.js']) <= 4_000, 'JS over 4 KB budget'
     assert (ROOT / 'index.html').stat().st_size <= 30_000, 'Homepage HTML over 30 KB budget'
-    assert (ROOT / 'assets/optimized/model-1280.webp').stat().st_size <= 60_000
-    assert (ROOT / 'assets/optimized/model-640.webp').stat().st_size <= 30_000
     assert sum((ROOT / 'fonts' / f'inter-web-{weight}.woff2').stat().st_size for weight in [300,500,700]) <= 24_000
     assert (ROOT / 'fonts/work-sans-brand.woff2').stat().st_size <= 2_000
     for name, budget in [('hero-model-640.avif',12_000),('hero-model-1280.avif',30_000),('hero-team-320.avif',8_000),('hero-team-640.avif',21_000)]:

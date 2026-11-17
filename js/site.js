@@ -23,10 +23,12 @@
       observer.unobserve(entry.target);
     }
   }, { rootMargin: '0px 0px -8% 0px' });
-  for (const element of document.querySelectorAll('[data-enter]')) {
-    const box = element.getBoundingClientRect();
+  // Measure first, then change: one layout pass instead of one per element.
+  const below = [...document.querySelectorAll('[data-enter]')]
+    .map(element => [element, element.getBoundingClientRect()])
     // Anything already on screen (or above it) stays as it is: no flash, no hidden content.
-    if (box.top < innerHeight) continue;
+    .filter(([, box]) => box.top >= innerHeight);
+  for (const [element, box] of below) {
     // Stagger by column, so a row of cards arrives left to right.
     element.style.setProperty('--i', Math.round(box.left / innerWidth * 4));
     element.classList.add('will-enter');

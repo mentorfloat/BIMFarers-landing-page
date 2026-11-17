@@ -1,5 +1,9 @@
 # Approved option A — responsive verification
 
+> **Historical record.** This document describes the first redesign pass. Colours, copy,
+> layout, the map and the tooling have changed since. See [SECOND-PASS.md](SECOND-PASS.md)
+> for the current state.
+
 Implemented on `design/modern-minimal-refresh` after owner approval. Production
 `main` is not modified or deployed by this update.
 

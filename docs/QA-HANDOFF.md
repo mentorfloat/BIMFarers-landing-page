@@ -1,5 +1,9 @@
 # QA handoff — modern minimal refresh
 
+> **Historical record.** This document describes the first redesign pass. Colours, copy,
+> layout, the map and the tooling have changed since. See [SECOND-PASS.md](SECOND-PASS.md)
+> for the current state.
+
 Review branch: `design/modern-minimal-refresh`.
 Compare against baseline `7cf7a55dacc0eb5e379b5edb786f3596a1ee9d03` on `main`.
 Do not merge or deploy while reviewing. Production is `main`, not `master`.

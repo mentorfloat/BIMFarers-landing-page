@@ -18,8 +18,8 @@
       <figure class="app-window">
         <figcaption class="app-bar"><span class="app-dots" aria-hidden="true"></span>BIMF Tools – Insert slab penetrations</figcaption>
         <picture>
-          <source type="image/avif" srcset="/assets/optimized/plugin-pipe-960.avif">
-          <img src="/assets/optimized/plugin-pipe-960.webp" width="960" height="612" fetchpriority="high" alt="The BIMF Tools ribbon in Revit with the Insert Slab Penetrations dialog open beside a model of hydraulic pipework">
+          <source type="image/avif" srcset="/assets/optimized/plugin-pipe-640.avif 640w, /assets/optimized/plugin-pipe-960.avif 960w" sizes="(max-width: 1100px) 92vw, 61vw">
+          <img src="/assets/optimized/plugin-pipe-960.webp" srcset="/assets/optimized/plugin-pipe-640.webp 640w, /assets/optimized/plugin-pipe-960.webp 960w" sizes="(max-width: 1100px) 92vw, 61vw" width="960" height="612" alt="The BIMF Tools ribbon in Revit with the Insert Slab Penetrations dialog open beside a model of hydraulic pipework">
         </picture>
       </figure>
       <figure class="line-drawing"><img src="/assets/optimized/penetration-line-400.webp" width="400" height="550" loading="lazy" decoding="async" alt="Line drawing of a slab penetration element with a puddle flange"><figcaption>Penetration element</figcaption></figure>
@@ -44,7 +44,7 @@
       </div>
       <figure class="code-panel" data-enter>
         <figcaption><span>FindPipesThroughSlab.cs</span><span>C#</span></figcaption>
-<pre><code><span class="c">// Collect the pipes that pass through a slab</span>
+<pre tabindex="0"><code><span class="c">// Collect the pipes that pass through a slab</span>
 <span class="k">var</span> box = slab.get_BoundingBox(<span class="k">null</span>);
 <span class="k">var</span> outline = <span class="k">new</span> <span class="t">Outline</span>(box.Min, box.Max);
 

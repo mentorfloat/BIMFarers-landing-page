@@ -185,6 +185,77 @@ need checking on real devices.
   section padding) instead of two stacked paddings.
 - Portrait tablets no longer force the hero to full screen height.
 
+## Full audit (round 7)
+
+A sweep of every page and file with independent tools, not only the project's
+own checks.
+
+| Tool | Scope | Result |
+| --- | --- | --- |
+| Lighthouse 12, phone emulation, throttled | Home (×3), Practice, Revit tools, Journal, an article, privacy policy | 100 performance, 100 accessibility, 100 best practices, 100 SEO on each |
+| axe-core, WCAG 2.0–2.2 A/AA and best practices | All ten pages at 1440 and 390 px, menu open on phones | 0 issues (was 2) |
+| html-validate, recommended rules | All ten pages | 0 errors (was 35) |
+| csstree validator, `node --check` | Stylesheet and both scripts | Valid |
+| GitHub Actions "Check static site" | Every push to this branch | Passing |
+| Keyboard walk | Home, Practice, Revit tools, an article | Skip link first; every stop has a visible focus ring |
+
+The 404 page scores 66 for SEO in Lighthouse only because it is deliberately `noindex`.
+
+### Fixed in this round
+- **Accessibility.** The decorative footer wordmark was a contrast failure on every
+  page; it is now drawn by CSS and is no longer page text. The code sample scrolls
+  sideways on phones and is now reachable by keyboard.
+- **Markup.** Phone numbers no longer wrap mid-number. Article citation anchors
+  are `cite-1` rather than `1`. Removed an `aria-label` that had no effect.
+- **Loading.** The first Journal card was lazy-loaded although it is on the first
+  screen on phones. The Practice hero has AVIF and a 960 px step (73 KB → 29 KB
+  on a typical phone). The plugin screenshot, Journal cards and credential badges
+  have right-sized versions. The Tools screenshot no longer claims high priority
+  when it is below the fold on phones.
+- **Main thread.** The header rule animates opacity instead of a border colour,
+  and the reveal script measures all elements before changing any.
+- **Fonts.** The middle dot used in bylines was missing from the Inter subsets
+  and fell back to another font; it is now included. A zero-width space was
+  removed from one article.
+- **Print.** The navy and charcoal sections printed as white text on white paper.
+  They now print as black on white, and screen-only parts are hidden.
+- **Journal.** Articles end with "All articles" and the next article; the index
+  ends with the same enquiry band as the other main pages. One article linked
+  to another through the full apex-domain address; it is now an internal link.
+- **Housekeeping.** Removed two unused hero derivatives. `scripts/check.py` now
+  also fails on skipped heading levels, IDs that start with a digit and internal
+  `.html` links. Older first-pass documents carry a "historical record" note.
+
+### Not verifiable from this environment
+- **External links.** Outside websites are blocked here, so these could not be
+  checked. The 2023 article references are the ones most likely to have moved:
+
+- <https://home.kpmg/au/en/home/insights/2023/06/global-construction-survey-trends-2023.html> (3-construction-recap-2023)
+- <https://investor.trimble.com/news/news-details/2023/Trimble-and-Meta-Bring-SketchUp-to-Meta-Quest-VR-Headsets/default.aspx> (3-construction-recap-2023)
+- <https://stream-measurement.com/jwfmedia/products/flow/natural-gas-flow-meters/itron-cyble/itron-automatic-meter-reading-diagram.jpg> (2-built-to-rent)
+- <https://twitter.com/JacintaAllanMP/status/1604708587527630849/photo/2> (3-construction-recap-2023)
+- <https://www.google.com/maps/search/?api=1&query=6+Jalan+Kia+Peng+50450+Kuala+Lumpur> (aboutus)
+- <https://www.google.com/maps/search/?api=1&query=678+Victoria+Street+Richmond+Victoria+3121> (aboutus)
+- <https://www.health.vic.gov.au/covid-19-infection-prevention-control-guidelines/ventilation> (2-built-to-rent)
+- <https://www.mitsubishicomfort.com/articles/what-is-all-electric-vrf-technology> (2-built-to-rent)
+- <https://www.scottcarver.com.au/our-projects/gladstone-st-south-melbourne-vic> (2-built-to-rent)
+- <https://www.skynews.com.au/business/finance/richstone-group-collapses-owing-creditors-22-million-and-leaving-150-staff-without-a-job-following-complications/news-story/17f5fcafc4b2200f5f72631666e9abf7> (3-construction-recap-2023)
+- <https://www.theurbandeveloper.com/articles/gurner-qualitas-raise-12bn-build-to-rent-war-chest> (2-built-to-rent)
+- <https://www.vic.gov.au/housing-statement> (2-built-to-rent)
+- <https://apps.autodesk.com/en/Publisher/PublisherHomepage?ID=RKMJZP6LKPCYL5XJ> (every page)
+
+- **Caching.** Lighthouse notes short cache lifetimes. GitHub Pages fixes these
+  at 10 minutes and they cannot be changed from the repository.
+- **Render-blocking stylesheet.** Lighthouse notes the 9 KB stylesheet. It is one
+  small cached file shared by all pages; inlining it would cost more than it saves.
+- **Map tiles**, real Safari/iOS and Firefox: see below.
+
+### Left in place on purpose
+- **Source media.** 6.9 MB of original photos, renders and two videos in
+  `assets/` are not used by any page. They are the sources for the optimised
+  versions and may be linked from outside the site (for example the Autodesk
+  App Store listing), so they stay until the owner decides.
+
 ## Please verify before release
 
 0. **Map on the real domain.** Open the Practice page on the live or preview site

@@ -1,5 +1,9 @@
 # BIM Farers — design review, 6 November 2026
 
+> **Historical record.** This document describes the first redesign pass. Colours, copy,
+> layout, the map and the tooling have changed since. See [SECOND-PASS.md](SECOND-PASS.md)
+> for the current state.
+
 Baseline: `mentorfloat/BIMFarers-landing-page`, `main`, commit
 `7cf7a55dacc0eb5e379b5edb786f3596a1ee9d03`.
 Working branch: `design/modern-minimal-refresh`. This is a reviewable first

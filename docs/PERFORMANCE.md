@@ -1,5 +1,9 @@
 # Performance evidence — first redesign
 
+> **Historical record.** This document describes the first redesign pass. Colours, copy,
+> layout, the map and the tooling have changed since. See [SECOND-PASS.md](SECOND-PASS.md)
+> for the current state.
+
 For the subsequently approved overlapping team-photo hero, see
 [the option A comparison](OPTION-A-PERFORMANCE.md). This document preserves the
 initial full-site baseline comparison.

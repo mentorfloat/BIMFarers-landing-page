@@ -1,5 +1,9 @@
 # Approved option A — loading comparison
 
+> **Historical record.** This document describes the first redesign pass. Colours, copy,
+> layout, the map and the tooling have changed since. See [SECOND-PASS.md](SECOND-PASS.md)
+> for the current state.
+
 Compared with the previous iteration commit `a747821` on this branch. Production
 `main` remains at the original site. This update adds the smaller team image,
 restores the original font-weight hierarchy and fixes mobile menu layout shift.

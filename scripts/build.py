@@ -31,6 +31,14 @@ def build():
         jsonld = (ROOT / 'content' / page['jsonld']).read_text() if page.get('jsonld') else ''
         canonical = 'https://www.bimfarers.com.au/' + (page['file'][:-5] if page['file'] != 'index.html' else '')
         indexable = not page.get('noindex')
+        content = (ROOT / 'content' / page['file']).read_text()
+        if schema:
+            articles = [p for p in pages if p.get('schema')]
+            following = articles[(articles.index(page) + 1) % len(articles)]
+            content += ('<nav class="wrap article-end" aria-label="More from the journal">'
+                        '<a class="text-link" href="/blog">← All articles</a>'
+                        f'<a class="article-next" href="/{following["file"][:-5]}"><span class="eyebrow">Next article</span>'
+                        f'{html.escape(following["title"])}</a></nav>\n')
         values = {
             'title': html.escape(page['title']),
             'description': html.escape(page['description'], quote=True),
@@ -40,7 +48,7 @@ def build():
             'robots': '<meta name="robots" content="noindex">' if page.get('noindex') else '',
             'header': nav, 'footer': footer,
             'navigation_script': (ROOT / 'js/navigation.js').read_text(),
-            'content': (ROOT / 'content' / page['file']).read_text(),
+            'content': content,
             'schema': schema + jsonld,
             'og_type': 'article' if schema else 'website',
             'og_image': og_image,

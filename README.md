@@ -80,5 +80,6 @@ The responsive suite additionally exercises 23 viewport sizes, landscape,
 200% text enlargement, reflow, retina image selection and WebP fallbacks.
 
 `scripts/check.py` runs in GitHub Actions on iteration-branch pushes and PRs. It
-checks links, assets, anchors, schema, image dimensions and size budgets. The
-deployment workflow only permits `refs/heads/main`, including manual runs.
+checks links, assets, anchors, heading order, IDs, schema, image dimensions and
+size budgets. The deployment workflow only permits `refs/heads/main`, including
+manual runs.
